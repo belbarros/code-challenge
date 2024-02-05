@@ -1,0 +1,17 @@
+version: 1
+default_environment: dev
+project_id: 5fc7fe95-0ab1-40fd-b4fb-9ae740015134
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      files:
+      - entity: 'lighthouse'
+        path: '../data/order_details.csv'
+        keys: ['order_id', 'product_id', 'unit_price', 'quantity', 'discount']
