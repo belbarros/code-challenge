@@ -12,6 +12,32 @@ plugins:
     pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
     config:
       files:
-      - entity: 'lighthouse'
-        path: '../data/order_details.csv'
-        keys: ['order_id', 'product_id', 'unit_price', 'quantity', 'discount']
+      - entity: order-detail
+        path: ../data/order_details.csv
+        keys: [order_id, product_id, unit_price, quantity, discount]
+  - name: tap-postgres
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-postgres.git
+    config:
+      port: 5432
+      host: localhost
+      user: northwind_user
+      database: northwind
+    select:
+      - public-categories.*
+      - public-customer_customer_demo.*
+      - public-customer_demographics.*
+      - public-customers.*
+      - public-employee_territories.*
+      - public-employees.*
+      - public-orders.*
+      - public-products.*
+      - public-region.*
+      - public-shippers.*
+      - public-suppliers.*
+      - public-territories.*
+      - public-us_states.*
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
