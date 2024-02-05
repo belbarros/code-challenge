@@ -23,21 +23,30 @@ plugins:
       host: localhost
       user: northwind_user
       database: northwind
+      stream_maps:
+        public-orders:
+          freight: str(record['freight'])
+        public-products:
+          unit_price: str(record['unit_price'])
     select:
-      - public-categories.*
-      - public-customer_customer_demo.*
-      - public-customer_demographics.*
-      - public-customers.*
-      - public-employee_territories.*
-      - public-employees.*
-      - public-orders.*
-      - public-products.*
-      - public-region.*
-      - public-shippers.*
-      - public-suppliers.*
-      - public-territories.*
-      - public-us_states.*
+    - public-categories.*
+    - public-customer_customer_demo.*
+    - public-customer_demographics.*
+    - public-customers.*
+    - public-employee_territories.*
+    - public-employees.*
+    - public-orders.*
+    - public-products.*
+    - public-region.*
+    - public-shippers.*
+    - public-suppliers.*
+    - public-territories.*
+    - public-us_states.*
   loaders:
   - name: target-jsonl
     variant: andyh1203
     pip_url: target-jsonl
+  mappers: 
+  - name: meltano-map-transformer
+    variant: meltano
+    pip_url: git+https://github.com/MeltanoLabs/meltano-map-transform.git
