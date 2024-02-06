@@ -1,32 +1,33 @@
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-
 from datetime import datetime
 
-def extract_csv():
-    return 'meltano'
+from airflow.providers.docker.operators.docker import DockerOperator
+from airflow.utils.task_group import TaskGroup
 
-with DAG("lighthouse_challenge", start_date=datetime(2020, 1, 1), schedule_interval="@daily", catchup=False) as dag:
-    extract_csv = PythonOperator(
-        task_id='extract_csv',
-        python_callable=extract_csv
+from airflow import DAG
+
+
+default_args = { "retries": 2 }
+
+def meltano_task(task_id, pipeline_name):
+    return DockerOperator(
+        task_id=task_id,
+        image='meltano:1.0',
+        api_version= 'auto',
+        auto_remove=True,
+        network_mode='host',
+        entrypoint=[
+            "bash",
+            "-c",
+            f"meltano run {pipeline_name}"
+        ]
     )
 
-    extract_postgres = PythonOperator(
-        task_id='extract_postgres',
-        python_callable=''
-    )
+with DAG(dag_id="lighthouse_challenge", default_args=default_args, start_date=datetime(2020, 1, 1), schedule_interval="@daily", catchup=False) as dag:
 
-    # save_local = PythonOperator(
-    #     task_id='save_local',
-    #     python_callable=''
-    # )
+    with TaskGroup(group_id="extracts") as extract_tasks:
+        extract_csv = meltano_task('csv', 'extract-csv')
 
-    save_db = PythonOperator(
-        task_id='save_db',
-        python_callable=''
-    )
+        extract_postgres = meltano_task('postgres', 'extract-postgres')
 
-extract_csv >> save_db
-extract_postgres >> save_db   
+# extract_csv >> extract_postgres >> save_db
     

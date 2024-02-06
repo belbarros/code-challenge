@@ -1,0 +1,63 @@
+
+plugins:
+  extractors:
+  - name: tap-csv--to-local
+    inherit_from: tap-csv
+    config:
+      files:
+      - entity: order-detail
+        path: ../data/order_details.csv
+        keys: [order_id, product_id, unit_price, quantity, discount]
+
+  - name: tap-csv--to-postgres
+    inherit_from: tap-csv
+    config:
+      files:
+      - entity: lighthouse
+        path: ./output/
+        keys: ['']
+
+  - name: tap-postgres--to-local
+    inherit_from: tap-postgres
+    config:
+      port: 5432
+      host: localhost
+      user: northwind_user
+      database: northwind
+      stream_maps:
+        public-orders:
+          freight: str(record['freight'])
+        public-products:
+          unit_price: str(record['unit_price'])
+
+  loaders:
+  - name: target-postgres--db
+    inherit_from: target-postgres
+    config:
+      user: meltano
+      database: lighthouse
+      host: localhost
+      port: 5555
+
+  - name: target-csv--csv-files
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/csv-data/
+
+  - name: target-csv--postgres-files
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/  
+    
+  mappers:
+  - name: meltano-map-transformer
+    variant: meltano
+    pip_url: git+https://github.com/MeltanoLabs/meltano-map-transform.git
+
+jobs:
+- name: extract-postgres
+  tasks:
+  - tap-postgres--to-local target-csv--postgres-files
+- name: extract-csv
+  tasks:
+  - tap-csv--to-local target-csv--csv-files
