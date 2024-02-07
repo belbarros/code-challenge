@@ -1,0 +1,114 @@
+plugins:
+  extractors:
+
+  - name: tap-postgres--northwind-public-categories
+    inherit_from: tap-postgres
+    select:
+    - public-categories.*
+
+  - name: tap-postgres--northwind-public-customers
+    inherit_from: tap-postgres
+    select:
+    - public-customers.*
+
+  - name: tap-postgres--northwind-public-employee_territories
+    inherit_from: tap-postgres
+    select:
+    - public-employee_territories.*
+
+  - name: tap-postgres--northwind-public-employees
+    inherit_from: tap-postgres
+    select:
+    - public-employees.*
+
+  - name: tap-postgres--northwind-public-orders
+    inherit_from: tap-postgres
+    select:
+    - public-orders.*
+    config:
+      stream_maps:
+        public-orders:
+          freight: str(record['freight']) 
+
+  - name: tap-postgres--northwind-public-products
+    inherit_from: tap-postgres
+    select:
+    - public-products.*
+    config:
+      stream_maps:
+        public-products:
+          unit_price: str(record['unit_price'])
+
+  - name: tap-postgres--northwind-public-shippers
+    inherit_from: tap-postgres
+    select:
+    - public-shippers.*
+
+  - name: tap-postgres--northwind-public-suppliers
+    inherit_from: tap-postgres
+    select:
+    - public-suppliers.*
+
+  - name: tap-postgres--northwind-public-us_states
+    inherit_from: tap-postgres
+    select:
+    - public-us_states.*    
+
+  loaders:
+  - name: target-csv--public-categories
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-categories
+
+  - name: target-csv--public-customers
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-customers
+
+  - name: target-csv--public-employee_territories
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-employee_territories
+
+  - name: target-csv--public-employees
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-employees
+
+  - name: target-csv--public-orders
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-orders
+
+  - name: target-csv--public-products
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-products
+
+  - name: target-csv--public-shippers
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-shippers
+
+  - name: target-csv--public-suppliers
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-suppliers
+
+  - name: target-csv--public-us_states
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/postgres-data/public-us_states
+
+jobs:
+- name: extract-postgres
+  tasks:
+  - tap-postgres--northwind-public-categories target-csv--public-categories
+  - tap-postgres--northwind-public-customers target-csv--public-customers
+  - tap-postgres--northwind-public-employee_territories target-csv--public-employee_territories
+  - tap-postgres--northwind-public-employees target-csv--public-employees
+  - tap-postgres--northwind-public-orders target-csv--public-orders
+  - tap-postgres--northwind-public-products target-csv--public-products
+  - tap-postgres--northwind-public-shippers target-csv--public-shippers
+  - tap-postgres--northwind-public-suppliers target-csv--public-suppliers
+  - tap-postgres--northwind-public-us_states target-csv--public-us_states

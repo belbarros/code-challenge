@@ -1,0 +1,56 @@
+plugins:
+  extractors:
+  - name: tap-csv--to-lighthouse
+    inherit_from: tap-csv
+    config:
+      files:
+      - entity: order_details
+        path: ./output/csv-data/
+        keys: [order_id, product_id]
+      - entity: categories
+        path: ./output/postgres-data/public-categories
+        keys: [category_id]
+      - entity: customers
+        path: ./output/postgres-data/public-customers
+        keys: [customer_id]
+      - entity: employee_territories
+        path: ./output/postgres-data/public-employee_territories
+        keys: [employee_id, territory_id]
+      - entity: employees
+        path: ./output/postgres-data/public-employees
+        keys: [employee_id]
+      - entity: orders
+        path: ./output/postgres-data/public-orders
+        keys: [order_id]
+      - entity: products
+        path: ./output/postgres-data/public-products
+        keys: [product_id]
+      - entity: shippers
+        path: ./output/postgres-data/public-shippers
+        keys: [shipper_id]
+      - entity: supplier
+        path: ./output/postgres-data/public-suppliers
+        keys: [supplier_id]
+      - entity: us_state
+        path: ./output/postgres-data/public-us_states
+        keys: [state_id]
+
+  loaders:
+  - name: target-postgres--lighthouse
+    inherit_from: target-postgres
+    config:
+      user: meltano
+      database: lighthouse
+      dbname: lighthouse
+      host: localhost
+      port: 5555
+
+  mappers:
+  - name: meltano-map-transformer
+    variant: meltano
+    pip_url: git+https://github.com/MeltanoLabs/meltano-map-transform.git
+
+jobs:
+- name: send-to-lighthouse
+  tasks:
+  - tap-csv--to-lighthouse target-postgres--lighthouse

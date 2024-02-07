@@ -1,0 +1,20 @@
+plugins:
+  extractors:
+  - name: tap-csv--order_details
+    inherit_from: tap-csv
+    config:
+      files:
+      - entity: order-detail
+        path: ../data/order_details.csv
+        keys: [order_id, product_id]
+
+  loaders:
+  - name: target-csv--local
+    inherit_from: target-csv
+    config:
+      destination_path: ./output/csv-data/
+
+jobs:
+- name: extract-csv
+  tasks:
+  - tap-csv--order_details target-csv--local

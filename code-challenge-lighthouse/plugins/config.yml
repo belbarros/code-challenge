@@ -1,6 +1,3 @@
-version: 1
-default_environment: dev
-project_id: 5fc7fe95-0ab1-40fd-b4fb-9ae740015134
 environments:
 - name: dev
 - name: staging
@@ -11,16 +8,19 @@ plugins:
   - name: tap-csv
     variant: meltanolabs
     pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
-
   - name: tap-postgres
     variant: meltanolabs
     pip_url: git+https://github.com/MeltanoLabs/tap-postgres.git
+    config:
+      port: 5432
+      host: localhost
+      user: northwind_user
+      database: northwind
 
   loaders:
   - name: target-postgres
     variant: meltanolabs
     pip_url: meltanolabs-target-postgres
-
   - name: target-csv
-    variant: hotgluexyz
-    pip_url: git+https://github.com/hotgluexyz/target-csv.git
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
