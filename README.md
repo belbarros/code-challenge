@@ -1,84 +1,72 @@
-# Indicium Tech Code Challenge
 
-Code challenge for Software Developer with focus in data projects.
+# Lighthouse Code Challenge
 
+This is my resolution for the Lighthouse Code Challenge. This is the Data Engineering challenge, where you're supposed to build a pipeline that extracts data from two different sources and write the data to your local disc first, and to a PostgresSQL database afterwards.
 
-## Context
+## Tools used
 
-At Indicium we have many projects where we develop the whole data pipeline for our client, from extracting data from many data sources to loading this data at its final destination, with this final destination varying from a data warehouse for a Business Intelligency tool to an api for integrating with third party systems.
+For this challenge I used [Meltano](https://meltano.com/), [Apache Airflow](https://airflow.apache.org/), [PostgresSQL](https://www.postgresql.org/) and [Docker](https://www.docker.com/). 
 
-As a software developer with focus in data projects your mission is to plan, develop, deploy, and maintain a data pipeline.
-
-
-## The Challenge
-
-We are going to provide 2 data sources, a PostgreSQL database and a CSV file.
-
-The CSV file represents details of orders from an ecommerce system.
-
-The database provided is a sample database provided by microsoft for education purposes called northwind, the only difference is that the **order_detail** table does not exists in this database you are beeing provided with. This order_details table is represented by the CSV file we provide.
-
-Schema of the original Northwind Database: 
-
-![image](https://user-images.githubusercontent.com/49417424/105997621-9666b980-608a-11eb-86fd-db6b44ece02a.png)
-
-Your challenge is to build a pipeline that extracts the data everyday from both sources and write the data first to local disk, and second to a PostgreSQL database. For this challenge, the CSV file and the database will be static, but in any real world project, both data sources would be changing constantly.
-
-Its important that all writing steps (writing data from inputs to local filesystem and writing data from local filesystem to PostgreSQL database) are isolated from each other, you shoud be able to run any step without executing the others.
-
-For the first step, where you write data to local disk, you should write one file for each table. This pipeline will run everyday, so there should be a separation in the file paths you will create for each source(CSV or Postgres), table and execution day combination, e.g.:
-
+## Installation
+1. Clone this repository
+2. Start a [virtualenv](https://virtualenv.pypa.io/en/latest/index.html)
+```bash
+python -m venv env_name
+source env_name/bin/activate
 ```
-/data/postgres/{table}/2024-01-01/file.format
-/data/postgres/{table}/2024-01-02/file.format
-/data/csv/2024-01-02/file.format
+2. Run the two docker-compose located in the root file on your venv.
+3. Install the tools necessary:
+
+```bash
+pip install meltano apache-airflow
 ```
 
-You are free to chose the naming and the format of the file you are going to save.
+## The project
 
-At step 2, you should load the data from the local filesystem, which you have created, to the final database.
+The first step on this project was the set-up of the extractors (tap) and loaders (target) - the tools used for the extraction and loading of the data. This project has three pipelines, each set up on a separate file.
 
-The final goal is to be able to run a query that shows the orders and its details. The Orders are placed in a table called **orders** at the postgres Northwind database. The details are placed at the csv file provided, and each line has an **order_id** field pointing the **orders** table.
+The first pipeline is where the CSV file provided is extracted and loaded into a local disk. I used the [tap-csv](https://hub.meltano.com/extractors/tap-csv/) to extract the data and [target-csv](https://hub.meltano.com/loaders/target-csv) to save it locally as a CSV file. I chose the CSV file extension so I would not need to work with too many different types of taps/loaders, making the project less complex overall.
 
-## Solution Diagram
+The second one is where we extract the PostgreSQL data and loaded into a local disk. I used the [tap-postgres](https://hub.meltano.com/extractors/tap-postgres/) paired with the target-csv loader.
 
-As Indicium uses some standard tools, the challenge was designed to be done using some of these tools.
+This step presented a few challenges.
+First, I needed to organize the extracted data into folders for each table. The solution I decided on was creating a separate pair of tap-target for each table. This was the best workaround for my situation given my level of expertise with the tool, since it not only resolved the folder situation, but also made my resolution of the next step easier, given the tools I selected and knew how to use.
 
-The following tools should be used to solve this challenge.
-
-Scheduler:
-- [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)
-
-Data Loader:
-- [Embulk](https://www.embulk.org) (Java Based)
-**OR**
-- [Meltano](https://docs.meltano.com/?_gl=1*1nu14zf*_gcl_au*MTg2OTE2NDQ4Mi4xNzA2MDM5OTAz) (Python Based)
-
-Database:
-- [PostgreSQL](https://www.postgresql.org/docs/15/index.html)
-
-The solution should be based on the diagrams below:
-![image](docs/diagrama_embulk_meltano.jpg)
+<img src='/img/tap.png' />
 
 
-### Requirements
+After that, in some of the tables there was data in decimal format, and they were not being accepted by the loader. The solution for this was setting up a mapper. The mapper chosen was the [meltano-map-transformer](https://hub.meltano.com/mappers/meltano-map-transformer/), and what it does is transform the decimals on those tables into strings.
 
-- You **must** use the tools described above to complete the challenge.
-- All tasks should be idempotent, you should be able to run the pipeline everyday and, in this case where the data is static, the output shold be the same.
-- Step 2 depends on both tasks of step 1, so you should not be able to run step 2 for a day if the tasks from step 1 did not succeed.
-- You should extract all the tables from the source database, it does not matter that you will not use most of them for the final step.
-- You should be able to tell where the pipeline failed clearly, so you know from which step you should rerun the pipeline.
-- You have to provide clear instructions on how to run the whole pipeline. The easier the better.
-- You must provide evidence that the process has been completed successfully, i.e. you must provide a csv or json with the result of the query described above.
-- You should assume that it will run for different days, everyday.
-- Your pipeline should be prepared to run for past days, meaning you should be able to pass an argument to the pipeline with a day from the past, and it should reprocess the data for that day. Since the data for this challenge is static, the only difference for each day of execution will be the output paths.
-
-### Things that Matters
-
-- Clean and organized code.
-- Good decisions at which step (which database, which file format..) and good arguments to back those decisions up.
-- The aim of the challenge is not only to assess technical knowledge in the area, but also the ability to search for information and use it to solve problems with tools that are not necessarily known to the candidate.
-- Point and click tools are not allowed.
+<img src='/img/mapper.png' />
 
 
-Thank you for participating!
+The third and last pipeline is getting the CSV files on my local disk and sending them to the PostgreSQL database. I used the tap-csv and the [target-postgres](https://hub.meltano.com/loaders/target-postgres). I chose this setup so I could get the primary keys needed for this tap separately and correctly and also make sure it was always getting all the data extracted previously.
+
+And this is how the end database is looking!
+
+<img src='/img/db.png' />
+
+
+After the pipelines were set up, it was time to code the DAG file, where we do the integration and scheduling with Airflow.
+
+<img src='/img/airflow.png' />
+
+I first tried implementing a variable python function, where we have the task_id and the name of the meltano job corresponding to each task utilizing a DockerOperator to run an image of Meltano where we're going to call our pipeline jobs. But I ran with an issue of connectivity and permissions for the docker + airflow that none of the solutions I found online or was suggested to try worked. This is one of the error messages I got through Airflow:
+```
+docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', PermissionError(13, 'Permission denied'))
+[2024-02-07, 19:38:33 UTC] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=lighthouse_challenge, task_id=extracts.docker_command, execution_date=20240207T193830, start_date=20240207T193833, end_date=20240207T193833
+[2024-02-07, 19:38:33 UTC] {standard_task_runner.py:107} ERROR - Failed to execute job 35 for task extracts.docker_command (Error while fetching server API version: ('Connection aborted.', PermissionError(13, 'Permission denied')); 60)
+[2024-02-07, 19:38:33 UTC] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-07, 19:38:33 UTC] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+```
+
+I believe this is the best possible solution, but for technical issues it wasn't working. This is a known problem, documented by users as we can see [here](https://github.com/docker/for-mac/issues/4755) and [here](https://www.reddit.com/r/dataengineering/comments/kmojyc/how_can_i_used_the_dockeroperator_in_airflow_of_i/), for example. I tried all I could find and nothing worked for me.
+
+I also tried using BashOperator.
+For the bash I tried creating a custom Dockerfile so the bash_command could work and do the meltano run job, but there was a conflict between versions of the Airflow and Meltano, so it made the installations very complicated, and in the end it didn't work.
+
+<img src='/img/dockerfile.png' />
+
+
+## Conclusion
+This project was no short of challenges! I had a lot of hours dedicated to it, reading the documentations, trial and error, friends from the field to give me tips (I love you guys!), Google and Stackoverflow searches, and I learned so much! I'm now very prepared and very excited for all the new challenges Lighthouse will bring me. :smile:
