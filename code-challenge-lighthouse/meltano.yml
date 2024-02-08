@@ -6,3 +6,8 @@ include_paths:
 - plugins/project-el.yml
 - pipelines/*
 
+plugins:
+  files:
+  - name: files-airflow
+    variant: meltano
+    pip_url: git+https://github.com/meltano/files-airflow.git

@@ -1,0 +1,963 @@
+[2024-02-08T00:07:53.553+0000] {processor.py:161} INFO - Started process (PID=40) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:07:53.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:07:53.576+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:07:53.575+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:07:53.693+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:07:55.026+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:07:55.024+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:07:55.183+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:07:55.182+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T00:07:55.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 1.733 seconds
+[2024-02-08T00:08:25.729+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:25.783+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:08:25.858+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:25.850+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:26.124+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:26.765+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:26.764+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:08:28.240+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:28.240+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:08:28.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 2.624 seconds
+[2024-02-08T00:08:58.521+0000] {processor.py:161} INFO - Started process (PID=149) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:58.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:08:58.543+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:58.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:58.592+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:08:58.664+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:58.663+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:08:58.716+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:08:58.716+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:08:58.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.229 seconds
+[2024-02-08T00:11:18.994+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:19.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:11:19.003+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:19.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:19.017+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:19.247+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:19.246+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:11:19.268+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:19.268+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:11:19.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.295 seconds
+[2024-02-08T00:11:49.397+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:49.398+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:11:49.398+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:49.398+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:49.403+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:11:49.411+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:49.411+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:11:49.421+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:11:49.421+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:11:49.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.032 seconds
+[2024-02-08T00:12:19.553+0000] {processor.py:161} INFO - Started process (PID=148) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:19.554+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:12:19.555+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:19.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:19.560+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:19.568+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:19.568+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:12:19.579+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:19.579+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:12:19.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.034 seconds
+[2024-02-08T00:12:50.193+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:50.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:12:50.196+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:50.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:50.204+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:12:50.221+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:50.220+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:12:50.237+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:12:50.236+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:12:50.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.057 seconds
+[2024-02-08T00:13:20.776+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:20.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:13:20.784+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:20.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:20.796+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:20.811+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:20.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:13:20.824+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:20.824+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:13:20.831+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.062 seconds
+[2024-02-08T00:13:51.604+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:51.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:13:51.609+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:51.608+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:51.621+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:13:51.654+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:51.654+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:13:51.676+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:13:51.676+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:13:51.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.094 seconds
+[2024-02-08T00:14:21.925+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:21.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:14:21.934+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:21.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:21.952+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:21.985+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:21.985+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:14:22.000+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:22.000+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:14:22.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.091 seconds
+[2024-02-08T00:14:42.864+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:42.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:14:42.871+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:42.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:42.889+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:43.019+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:43.019+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:14:43.032+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:43.032+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:14:43.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.202 seconds
+[2024-02-08T00:14:57.859+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:57.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:14:57.868+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:57.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:57.884+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:14:57.901+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:57.901+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:14:57.931+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:14:57.931+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:14:57.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.092 seconds
+[2024-02-08T00:15:17.255+0000] {processor.py:161} INFO - Started process (PID=482) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:17.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:15:17.261+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:17.261+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:17.278+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:17.378+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:17.378+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:15:17.390+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:17.390+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:15:17.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.152 seconds
+[2024-02-08T00:15:47.819+0000] {processor.py:161} INFO - Started process (PID=538) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:47.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:15:47.825+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:47.825+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:47.839+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:15:47.877+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:47.876+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:15:47.894+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:15:47.894+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:15:47.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.094 seconds
+[2024-02-08T00:16:03.374+0000] {processor.py:161} INFO - Started process (PID=588) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:03.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:16:03.381+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:03.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:03.392+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:03.474+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:03.474+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:16:03.487+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:03.487+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:16:03.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.129 seconds
+[2024-02-08T00:16:33.558+0000] {processor.py:161} INFO - Started process (PID=644) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:33.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:16:33.562+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:33.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:33.569+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:16:33.582+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:33.581+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:16:33.596+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:16:33.596+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:16:33.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.050 seconds
+[2024-02-08T00:17:03.774+0000] {processor.py:161} INFO - Started process (PID=700) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:03.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:17:03.777+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:03.776+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:03.783+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:03.796+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:03.796+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:17:03.811+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:03.811+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:17:03.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.057 seconds
+[2024-02-08T00:17:34.138+0000] {processor.py:161} INFO - Started process (PID=755) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:34.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:17:34.139+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:34.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:34.145+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:17:34.154+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:34.154+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:17:34.164+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:17:34.164+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:17:34.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.036 seconds
+[2024-02-08T00:18:02.071+0000] {processor.py:161} INFO - Started process (PID=809) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:02.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:18:02.076+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:02.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:02.096+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:02.209+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:02.209+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:18:02.227+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:02.227+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:18:02.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.177 seconds
+[2024-02-08T00:18:05.304+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:05.305+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:18:05.306+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:05.306+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:05.315+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:05.323+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:05.322+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:18:05.339+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:05.339+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:18:05.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.048 seconds
+[2024-02-08T00:18:35.926+0000] {processor.py:161} INFO - Started process (PID=868) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:35.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:18:35.939+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:35.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:35.974+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:18:36.399+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:36.398+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:18:36.448+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:18:36.448+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:18:36.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.582 seconds
+[2024-02-08T00:19:07.505+0000] {processor.py:161} INFO - Started process (PID=922) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:07.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:19:07.512+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:07.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:07.526+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:07.555+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:07.554+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:19:07.572+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:07.572+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:19:07.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.085 seconds
+[2024-02-08T00:19:38.095+0000] {processor.py:161} INFO - Started process (PID=978) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:38.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:19:38.100+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:38.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:38.114+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:19:38.134+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:38.134+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:19:38.150+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:19:38.150+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:19:38.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.069 seconds
+[2024-02-08T00:20:08.366+0000] {processor.py:161} INFO - Started process (PID=1034) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:08.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:20:08.371+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:08.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:08.383+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:08.402+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:08.402+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:20:08.415+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:08.415+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:20:08.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.062 seconds
+[2024-02-08T00:20:38.622+0000] {processor.py:161} INFO - Started process (PID=1090) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:38.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:20:38.628+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:38.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:38.644+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:20:38.666+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:38.665+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:20:38.684+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:20:38.684+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:20:38.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.076 seconds
+[2024-02-08T00:21:08.821+0000] {processor.py:161} INFO - Started process (PID=1146) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:08.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:21:08.824+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:08.823+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:08.831+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:08.843+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:08.843+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:21:08.865+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:08.865+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:21:08.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.058 seconds
+[2024-02-08T00:21:39.668+0000] {processor.py:161} INFO - Started process (PID=1202) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:39.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:21:39.675+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:39.674+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:39.691+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:21:39.711+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:39.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:21:39.724+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:21:39.724+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:21:39.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.072 seconds
+[2024-02-08T00:22:09.806+0000] {processor.py:161} INFO - Started process (PID=1257) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:09.808+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:22:09.810+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:09.809+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:09.819+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:09.835+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:09.835+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:22:09.848+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:09.848+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:22:09.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.053 seconds
+[2024-02-08T00:22:40.649+0000] {processor.py:161} INFO - Started process (PID=1313) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:40.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:22:40.654+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:40.653+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:40.666+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:40.684+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:40.684+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:22:40.699+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:40.699+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:22:40.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.067 seconds
+[2024-02-08T00:22:58.064+0000] {processor.py:161} INFO - Started process (PID=1322) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:58.065+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:22:58.069+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:58.068+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:58.083+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:22:58.181+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:58.181+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:22:58.192+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:22:58.192+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:22:58.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.147 seconds
+[2024-02-08T00:23:28.621+0000] {processor.py:161} INFO - Started process (PID=1378) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:28.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:23:28.627+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:28.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:28.648+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:28.671+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:28.671+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:23:28.703+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:28.703+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:23:28.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.111 seconds
+[2024-02-08T00:23:58.912+0000] {processor.py:161} INFO - Started process (PID=1434) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:58.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:23:58.915+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:58.915+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:58.923+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:23:58.946+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:58.946+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:23:58.966+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:23:58.966+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:23:58.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.067 seconds
+[2024-02-08T00:24:29.301+0000] {processor.py:161} INFO - Started process (PID=1490) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:29.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:24:29.312+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:29.309+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:29.332+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:29.362+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:29.361+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:24:29.390+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:29.390+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:24:29.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.109 seconds
+[2024-02-08T00:24:59.861+0000] {processor.py:161} INFO - Started process (PID=1546) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:59.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:24:59.868+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:59.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:59.881+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:24:59.901+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:59.901+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:24:59.916+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:24:59.916+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:24:59.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.071 seconds
+[2024-02-08T00:25:30.138+0000] {processor.py:161} INFO - Started process (PID=1602) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:25:30.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:25:30.145+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:25:30.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:25:30.155+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:25:30.171+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:25:30.171+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:25:30.186+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:25:30.186+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:25:30.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.068 seconds
+[2024-02-08T00:26:00.415+0000] {processor.py:161} INFO - Started process (PID=1658) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:00.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:26:00.419+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:00.419+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:00.428+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:00.461+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:00.461+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:26:00.485+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:00.485+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:26:00.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.096 seconds
+[2024-02-08T00:26:30.743+0000] {processor.py:161} INFO - Started process (PID=1714) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:30.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:26:30.751+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:30.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:30.771+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:26:30.791+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:30.791+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:26:30.810+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:26:30.810+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:26:30.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.104 seconds
+[2024-02-08T00:27:01.112+0000] {processor.py:161} INFO - Started process (PID=1770) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:01.115+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:27:01.119+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:01.119+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:01.138+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:01.169+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:01.169+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:27:01.191+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:01.191+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:27:01.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.107 seconds
+[2024-02-08T00:27:31.267+0000] {processor.py:161} INFO - Started process (PID=1825) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:31.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:27:31.273+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:31.272+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:31.286+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:27:31.309+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:31.309+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:27:31.321+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:27:31.321+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:27:31.334+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.076 seconds
+[2024-02-08T00:28:01.599+0000] {processor.py:161} INFO - Started process (PID=1881) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:01.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:28:01.605+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:01.605+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:01.621+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:01.651+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:01.650+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:28:01.667+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:01.667+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:28:01.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.086 seconds
+[2024-02-08T00:28:31.735+0000] {processor.py:161} INFO - Started process (PID=1937) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:31.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:28:31.744+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:31.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:31.770+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:28:31.793+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:31.793+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:28:31.808+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:28:31.807+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:28:31.817+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.090 seconds
+[2024-02-08T00:29:02.138+0000] {processor.py:161} INFO - Started process (PID=1993) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:02.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:29:02.156+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:02.153+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:02.180+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:02.204+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:02.204+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:29:02.219+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:02.219+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:29:02.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.102 seconds
+[2024-02-08T00:29:32.757+0000] {processor.py:161} INFO - Started process (PID=2048) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:32.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:29:32.762+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:32.761+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:32.775+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:29:32.796+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:32.796+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:29:32.811+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:29:32.811+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:29:32.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.068 seconds
+[2024-02-08T00:30:03.212+0000] {processor.py:161} INFO - Started process (PID=2104) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:03.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:30:03.217+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:03.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:03.228+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:03.243+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:03.243+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:30:03.257+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:03.257+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:30:03.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.058 seconds
+[2024-02-08T00:30:33.542+0000] {processor.py:161} INFO - Started process (PID=2160) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:33.545+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:30:33.547+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:33.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:33.558+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:30:33.577+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:33.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:30:33.590+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:30:33.590+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:30:33.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.060 seconds
+[2024-02-08T00:31:04.101+0000] {processor.py:161} INFO - Started process (PID=2216) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:04.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:31:04.106+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:04.105+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:04.112+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:04.125+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:04.125+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:31:04.141+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:04.141+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:31:04.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.053 seconds
+[2024-02-08T00:31:34.225+0000] {processor.py:161} INFO - Started process (PID=2272) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:34.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:31:34.227+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:34.227+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:34.231+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:31:34.241+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:34.240+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:31:34.251+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:31:34.251+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:31:34.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.036 seconds
+[2024-02-08T00:32:04.903+0000] {processor.py:161} INFO - Started process (PID=2326) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:04.906+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:32:04.909+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:04.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:04.923+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:04.954+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:04.954+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:32:04.978+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:04.977+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:32:05.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.295 seconds
+[2024-02-08T00:32:35.521+0000] {processor.py:161} INFO - Started process (PID=2382) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:35.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:32:35.532+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:35.532+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:35.545+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:32:35.566+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:35.565+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:32:35.582+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:32:35.582+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:32:35.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.089 seconds
+[2024-02-08T00:33:05.740+0000] {processor.py:161} INFO - Started process (PID=2437) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:05.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:33:05.745+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:05.744+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:05.758+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:05.796+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:05.796+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:33:05.815+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:05.815+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:33:05.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.095 seconds
+[2024-02-08T00:33:36.448+0000] {processor.py:161} INFO - Started process (PID=2493) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:36.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:33:36.452+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:36.452+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:36.464+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:33:36.494+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:36.494+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:33:36.509+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:33:36.509+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:33:36.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.078 seconds
+[2024-02-08T00:34:07.138+0000] {processor.py:161} INFO - Started process (PID=2548) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:07.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:34:07.145+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:07.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:07.179+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:07.209+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:07.208+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:34:07.225+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:07.225+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:34:07.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.103 seconds
+[2024-02-08T00:34:37.613+0000] {processor.py:161} INFO - Started process (PID=2604) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:37.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:34:37.617+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:37.617+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:37.637+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:34:37.676+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:37.675+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:34:37.847+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:34:37.847+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:34:37.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.245 seconds
+[2024-02-08T00:35:08.291+0000] {processor.py:161} INFO - Started process (PID=2660) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:08.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:35:08.308+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:08.306+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:08.322+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:08.347+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:08.347+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:35:08.549+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:08.549+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:35:08.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.271 seconds
+[2024-02-08T00:35:39.123+0000] {processor.py:161} INFO - Started process (PID=2715) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:39.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:35:39.129+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:39.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:39.145+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:35:39.166+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:39.166+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:35:39.184+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:35:39.184+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T00:35:39.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.089 seconds
+[2024-02-08T00:58:27.000+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:58:27.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:58:27.009+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:27.009+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:58:27.024+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:58:27.339+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:27.338+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:lighthouse_challenge
+[2024-02-08T00:58:28.045+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:28.044+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:lighthouse_challenge
+[2024-02-08T00:58:28.139+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:28.137+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:lighthouse_challenge
+[2024-02-08T00:58:28.144+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:28.144+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:58:28.169+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:28.169+0000] {dag.py:3058} INFO - Creating ORM DAG for lighthouse_challenge
+[2024-02-08T00:58:28.185+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:58:28.184+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T00:58:28.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 1.219 seconds
+[2024-02-08T00:58:59.995+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:00.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:59:00.043+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:00.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:00.337+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:00.712+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:00.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:59:00.912+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:00.909+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T00:59:01.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 1.101 seconds
+[2024-02-08T00:59:32.639+0000] {processor.py:161} INFO - Started process (PID=146) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:33.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T00:59:34.004+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:33.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:34.336+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T00:59:34.800+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:34.796+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T00:59:35.021+0000] {logging_mixin.py:188} INFO - [2024-02-08T00:59:35.020+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T00:59:36.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 3.828 seconds
+[2024-02-08T01:00:06.413+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:06.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:00:06.419+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:06.419+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:06.438+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:06.482+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:06.482+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:00:06.510+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:06.509+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T01:00:06.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.150 seconds
+[2024-02-08T01:00:37.416+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:37.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:00:37.461+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:37.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:37.521+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:00:37.627+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:37.627+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:00:37.755+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:00:37.755+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T01:00:37.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.431 seconds
+[2024-02-08T01:01:35.743+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:01:35.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:01:35.788+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:01:35.787+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:01:36.192+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:01:36.417+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:01:36.416+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:01:36.683+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:01:36.679+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T01:01:36.777+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 1.045 seconds
+[2024-02-08T01:02:06.900+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:06.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:02:06.906+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:06.905+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:06.929+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:06.947+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:06.947+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:02:06.969+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:06.969+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T01:02:06.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.098 seconds
+[2024-02-08T01:02:26.932+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:26.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:02:26.935+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:26.935+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:27.115+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:02:28.989+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:28.987+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:02:29.048+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:02:29.048+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-07 00:00:00+00:00, run_after=2024-02-08 00:00:00+00:00
+[2024-02-08T01:02:29.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 2.155 seconds
+[2024-02-08T01:03:00.194+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:00.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:03:00.325+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:00.233+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:03.150+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:03.766+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:03.752+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:03:04.264+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:04.254+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:03:05.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 5.160 seconds
+[2024-02-08T01:03:36.163+0000] {processor.py:161} INFO - Started process (PID=520) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:36.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:03:36.548+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:36.546+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:36.639+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:03:36.770+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:36.770+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:03:36.853+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:03:36.853+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:03:36.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.906 seconds
+[2024-02-08T01:04:09.958+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:09.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:04:09.963+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:09.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:09.984+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:10.151+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:10.151+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:04:10.658+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:10.657+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:04:10.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.625 seconds
+[2024-02-08T01:04:45.546+0000] {processor.py:161} INFO - Started process (PID=619) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:45.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:04:45.622+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:45.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:45.770+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:04:45.864+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:45.864+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:04:46.009+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:04:46.007+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:04:46.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.608 seconds
+[2024-02-08T01:05:16.733+0000] {processor.py:161} INFO - Started process (PID=674) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:16.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:05:16.749+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:16.748+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:16.842+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:17.030+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:17.029+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:05:17.319+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:17.317+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:05:18.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 1.730 seconds
+[2024-02-08T01:05:56.469+0000] {processor.py:161} INFO - Started process (PID=729) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:56.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:05:56.480+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:56.480+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:56.544+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:05:56.653+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:56.653+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:05:56.735+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:05:56.735+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:05:56.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.345 seconds
+[2024-02-08T01:06:27.129+0000] {processor.py:161} INFO - Started process (PID=781) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:27.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:06:27.179+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:27.176+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:27.257+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:27.313+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:27.312+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:06:27.405+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:27.405+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:06:27.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.380 seconds
+[2024-02-08T01:06:57.724+0000] {processor.py:161} INFO - Started process (PID=837) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:57.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:06:57.733+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:57.732+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:57.769+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:06:57.859+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:57.858+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:06:57.891+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:06:57.890+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:06:57.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.195 seconds
+[2024-02-08T01:07:28.219+0000] {processor.py:161} INFO - Started process (PID=894) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:28.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:07:28.230+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:28.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:28.302+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:28.370+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:28.370+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:07:28.467+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:28.466+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:07:28.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.309 seconds
+[2024-02-08T01:07:58.829+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:58.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:07:58.831+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:58.830+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:58.848+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:07:58.880+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:58.880+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:07:58.904+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:07:58.904+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:07:58.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.092 seconds
+[2024-02-08T01:08:29.160+0000] {processor.py:161} INFO - Started process (PID=1006) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:08:29.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:08:31.165+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:08:31.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:08:31.832+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:08:31.977+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:08:31.977+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:08:32.105+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:08:32.105+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:08:32.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 3.149 seconds
+[2024-02-08T01:09:02.820+0000] {processor.py:161} INFO - Started process (PID=1062) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:02.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:09:02.822+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:02.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:02.829+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:02.848+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:02.848+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:09:02.868+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:02.868+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:09:02.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.061 seconds
+[2024-02-08T01:09:33.667+0000] {processor.py:161} INFO - Started process (PID=1118) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:33.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:09:33.672+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:33.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:33.684+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:09:33.702+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:33.702+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:09:33.716+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:09:33.716+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:09:33.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.062 seconds
+[2024-02-08T01:10:03.978+0000] {processor.py:161} INFO - Started process (PID=1174) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:03.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:10:03.984+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:03.984+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:04.013+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:04.120+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:04.119+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:10:04.131+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:04.131+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:10:04.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.172 seconds
+[2024-02-08T01:10:34.290+0000] {processor.py:161} INFO - Started process (PID=1230) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:34.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:10:34.295+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:34.295+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:34.311+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:10:34.330+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:34.330+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:10:34.361+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:10:34.360+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:10:34.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.089 seconds
+[2024-02-08T01:11:04.735+0000] {processor.py:161} INFO - Started process (PID=1285) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:04.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:11:04.738+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:04.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:04.752+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:04.772+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:04.772+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:11:04.800+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:04.799+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:11:04.817+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.090 seconds
+[2024-02-08T01:11:35.525+0000] {processor.py:161} INFO - Started process (PID=1341) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:35.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:11:35.529+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:35.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:35.545+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:11:35.580+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:35.580+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:11:35.607+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:11:35.607+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:11:35.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.102 seconds
+[2024-02-08T01:12:05.782+0000] {processor.py:161} INFO - Started process (PID=1396) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:05.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:12:05.788+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:05.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:05.811+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:05.840+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:05.840+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:12:05.860+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:05.860+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:12:05.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.097 seconds
+[2024-02-08T01:12:36.207+0000] {processor.py:161} INFO - Started process (PID=1452) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:36.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:12:36.213+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:36.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:36.231+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:12:36.280+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:36.279+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:12:36.314+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:12:36.314+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:12:36.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.129 seconds
+[2024-02-08T01:13:06.393+0000] {processor.py:161} INFO - Started process (PID=1509) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:06.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:13:06.395+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:06.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:06.402+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:06.420+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:06.419+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:13:06.435+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:06.435+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:13:06.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.053 seconds
+[2024-02-08T01:13:36.583+0000] {processor.py:161} INFO - Started process (PID=1565) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:36.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:13:36.589+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:36.588+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:36.600+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:13:36.635+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:36.635+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:13:36.653+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:13:36.652+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:13:36.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.089 seconds
+[2024-02-08T01:14:07.009+0000] {processor.py:161} INFO - Started process (PID=1621) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:07.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:14:07.019+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:07.019+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:07.033+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:07.055+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:07.055+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:14:07.073+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:07.073+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:14:07.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.084 seconds
+[2024-02-08T01:14:30.979+0000] {processor.py:161} INFO - Started process (PID=1676) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:30.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:14:30.982+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:30.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:30.993+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:31.069+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:31.069+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:14:31.082+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:31.082+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:14:31.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.117 seconds
+[2024-02-08T01:14:55.921+0000] {processor.py:161} INFO - Started process (PID=1730) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:55.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:14:55.925+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:55.924+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:55.937+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:14:55.960+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:55.960+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:14:55.980+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:14:55.980+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:14:55.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.077 seconds
+[2024-02-08T01:15:26.175+0000] {processor.py:161} INFO - Started process (PID=1786) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:26.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:15:26.189+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:26.189+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:26.220+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:26.309+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:26.309+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:15:26.355+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:26.355+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:15:26.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.217 seconds
+[2024-02-08T01:15:56.561+0000] {processor.py:161} INFO - Started process (PID=1841) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:56.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:15:56.567+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:56.567+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:56.596+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:15:56.618+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:56.618+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:15:56.637+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:15:56.636+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:15:56.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.112 seconds
+[2024-02-08T01:16:27.695+0000] {processor.py:161} INFO - Started process (PID=1897) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:27.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:16:27.699+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:27.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:27.719+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:27.739+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:27.739+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:16:27.766+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:27.766+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:16:27.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.089 seconds
+[2024-02-08T01:16:57.927+0000] {processor.py:161} INFO - Started process (PID=1953) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:57.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:16:57.932+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:57.932+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:57.945+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:16:57.964+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:57.964+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:16:57.979+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:16:57.979+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:16:57.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.066 seconds
+[2024-02-08T01:17:22.934+0000] {processor.py:161} INFO - Started process (PID=2006) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:22.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:17:22.941+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:22.941+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:22.954+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:23.211+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:23.211+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:17:23.222+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:23.222+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:17:23.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.304 seconds
+[2024-02-08T01:17:38.718+0000] {processor.py:161} INFO - Started process (PID=2013) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:38.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:17:38.731+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:38.730+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:38.750+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:17:38.766+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:38.766+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:17:38.787+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:17:38.787+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:17:38.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.092 seconds
+[2024-02-08T01:18:08.834+0000] {processor.py:161} INFO - Started process (PID=2069) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:08.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:18:08.838+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:08.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:08.847+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:08.862+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:08.862+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:18:08.877+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:08.877+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:18:08.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.057 seconds
+[2024-02-08T01:18:39.511+0000] {processor.py:161} INFO - Started process (PID=2125) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:39.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:18:39.516+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:39.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:39.540+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:18:39.561+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:39.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:18:39.579+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:18:39.579+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:18:39.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.085 seconds
+[2024-02-08T01:19:10.538+0000] {processor.py:161} INFO - Started process (PID=2181) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:10.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:19:10.544+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:10.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:10.555+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:10.570+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:10.570+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:19:10.584+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:10.584+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:19:10.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.060 seconds
+[2024-02-08T01:19:40.948+0000] {processor.py:161} INFO - Started process (PID=2237) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:40.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:19:40.952+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:40.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:40.961+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:19:40.975+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:40.975+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:19:40.989+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:19:40.989+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:19:40.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.054 seconds
+[2024-02-08T01:20:11.126+0000] {processor.py:161} INFO - Started process (PID=2293) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:11.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:20:11.135+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:11.134+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:11.156+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:11.175+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:11.174+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:20:11.191+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:11.191+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:20:11.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.243 seconds
+[2024-02-08T01:20:41.698+0000] {processor.py:161} INFO - Started process (PID=2349) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:41.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:20:41.705+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:41.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:41.719+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:20:41.758+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:41.758+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:20:41.775+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:20:41.775+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:20:41.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.094 seconds
+[2024-02-08T01:21:11.954+0000] {processor.py:161} INFO - Started process (PID=2405) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:11.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:21:11.958+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:11.958+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:11.966+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:11.978+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:11.978+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:21:11.990+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:11.990+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:21:11.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.048 seconds
+[2024-02-08T01:21:42.747+0000] {processor.py:161} INFO - Started process (PID=2461) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:42.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:21:42.750+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:42.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:42.757+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:21:42.770+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:42.770+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:21:42.785+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:21:42.785+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:21:42.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.049 seconds
+[2024-02-08T01:22:12.946+0000] {processor.py:161} INFO - Started process (PID=2517) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:12.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:22:12.951+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:12.951+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:12.964+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:12.984+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:12.984+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:22:12.999+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:12.999+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:22:13.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.076 seconds
+[2024-02-08T01:22:43.678+0000] {processor.py:161} INFO - Started process (PID=2573) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:43.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:22:43.684+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:43.683+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:43.697+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:22:43.726+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:43.726+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:22:43.916+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:22:43.916+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:22:43.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.284 seconds
+[2024-02-08T01:23:14.036+0000] {processor.py:161} INFO - Started process (PID=2629) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:14.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:23:14.044+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:14.043+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:14.061+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:14.087+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:14.087+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:23:14.113+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:14.113+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:23:14.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.246 seconds
+[2024-02-08T01:23:44.876+0000] {processor.py:161} INFO - Started process (PID=2685) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:44.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:23:44.885+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:44.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:44.901+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:23:44.945+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:44.945+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:23:44.963+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:23:44.963+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:23:44.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.123 seconds
+[2024-02-08T01:24:15.200+0000] {processor.py:161} INFO - Started process (PID=2741) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:15.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:24:15.218+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:15.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:15.234+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:15.256+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:15.256+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:24:15.273+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:15.273+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:24:15.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.098 seconds
+[2024-02-08T01:24:45.555+0000] {processor.py:161} INFO - Started process (PID=2797) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:45.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:24:45.563+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:45.562+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:45.581+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:24:45.617+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:45.617+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:24:45.635+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:24:45.635+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:24:45.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.097 seconds
+[2024-02-08T01:25:15.788+0000] {processor.py:161} INFO - Started process (PID=2853) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:15.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:25:15.810+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:15.802+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:15.839+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:15.862+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:15.862+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:25:15.881+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:15.880+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:25:15.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.112 seconds
+[2024-02-08T01:25:46.037+0000] {processor.py:161} INFO - Started process (PID=2908) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:46.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:25:46.043+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:46.043+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:46.076+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:25:46.107+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:46.107+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:25:46.132+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:25:46.132+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:25:46.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.113 seconds
+[2024-02-08T01:26:16.512+0000] {processor.py:161} INFO - Started process (PID=2970) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:16.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:26:16.521+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:16.520+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:16.541+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:16.564+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:16.564+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:26:16.581+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:16.581+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:26:16.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.087 seconds
+[2024-02-08T01:26:46.901+0000] {processor.py:161} INFO - Started process (PID=3026) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:46.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:26:46.906+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:46.906+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:46.921+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:26:46.943+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:46.943+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:26:46.968+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:26:46.968+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:26:46.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.091 seconds
+[2024-02-08T01:27:17.169+0000] {processor.py:161} INFO - Started process (PID=3082) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:17.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:27:17.175+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:17.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:17.191+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:17.227+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:17.226+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:27:17.243+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:17.243+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:27:17.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.091 seconds
+[2024-02-08T01:27:48.339+0000] {processor.py:161} INFO - Started process (PID=3138) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:48.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:27:48.345+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:48.345+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:48.360+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:27:48.380+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:48.380+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:27:48.397+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:27:48.397+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:27:48.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.086 seconds
+[2024-02-08T01:28:18.829+0000] {processor.py:161} INFO - Started process (PID=3194) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:18.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:28:18.835+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:18.834+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:18.849+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:18.888+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:18.887+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:28:18.906+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:18.906+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:28:18.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.100 seconds
+[2024-02-08T01:28:49.300+0000] {processor.py:161} INFO - Started process (PID=3250) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:49.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:28:49.309+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:49.308+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:49.331+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:28:49.362+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:49.362+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:28:49.377+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:28:49.377+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:28:49.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.096 seconds
+[2024-02-08T01:29:19.694+0000] {processor.py:161} INFO - Started process (PID=3306) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:19.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:29:19.702+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:19.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:19.742+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:19.768+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:19.768+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:29:19.784+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:19.784+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:29:19.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.108 seconds
+[2024-02-08T01:29:50.795+0000] {processor.py:161} INFO - Started process (PID=3362) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:50.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:29:50.802+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:50.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:50.822+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:29:50.869+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:50.868+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:29:50.884+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:29:50.884+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:29:50.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.105 seconds
+[2024-02-08T01:30:21.976+0000] {processor.py:161} INFO - Started process (PID=3418) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:21.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:30:21.990+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:21.989+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:22.006+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:22.028+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:22.028+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:30:22.057+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:22.057+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:30:22.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.104 seconds
+[2024-02-08T01:30:23.244+0000] {processor.py:161} INFO - Started process (PID=3425) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:23.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:30:23.247+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:23.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:23.258+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:23.273+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:23.273+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:30:23.287+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:23.287+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:30:23.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.060 seconds
+[2024-02-08T01:30:53.734+0000] {processor.py:161} INFO - Started process (PID=3481) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:53.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:30:53.737+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:53.736+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:53.743+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:30:53.754+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:53.754+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:30:53.768+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:30:53.767+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:30:53.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.045 seconds
+[2024-02-08T01:31:08.750+0000] {processor.py:161} INFO - Started process (PID=3519) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:08.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:31:08.760+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:08.760+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:08.775+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:08.879+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:08.879+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:31:08.893+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:08.893+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:31:08.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.174 seconds
+[2024-02-08T01:31:39.919+0000] {processor.py:161} INFO - Started process (PID=3575) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:39.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:31:39.922+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:39.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:39.931+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:31:39.945+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:39.945+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:31:39.959+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:31:39.959+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:31:39.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.052 seconds
+[2024-02-08T01:32:10.094+0000] {processor.py:161} INFO - Started process (PID=3631) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:10.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:32:10.098+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:10.098+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:10.110+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:10.127+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:10.126+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:32:10.140+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:10.140+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:32:10.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.059 seconds
+[2024-02-08T01:32:40.976+0000] {processor.py:161} INFO - Started process (PID=3687) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:40.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:32:40.980+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:40.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:40.991+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:32:41.008+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:41.008+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:32:41.019+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:32:41.018+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:32:41.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.054 seconds
+[2024-02-08T01:33:11.644+0000] {processor.py:161} INFO - Started process (PID=3743) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:11.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:33:11.650+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:11.649+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:11.662+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:11.680+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:11.680+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:33:11.692+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:11.692+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:33:11.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.062 seconds
+[2024-02-08T01:33:42.391+0000] {processor.py:161} INFO - Started process (PID=3799) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:42.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:33:42.397+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:42.396+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:42.410+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:33:42.428+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:42.428+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:33:42.443+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:33:42.443+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:33:42.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.067 seconds
+[2024-02-08T01:34:13.148+0000] {processor.py:161} INFO - Started process (PID=3855) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:13.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:34:13.156+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:13.155+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:13.169+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:13.199+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:13.199+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:34:13.214+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:13.214+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:34:13.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.082 seconds
+[2024-02-08T01:34:43.284+0000] {processor.py:161} INFO - Started process (PID=3911) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:43.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:34:43.289+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:43.288+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:43.303+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:34:43.321+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:43.321+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:34:43.335+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:34:43.334+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:34:43.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.067 seconds
+[2024-02-08T01:35:13.487+0000] {processor.py:161} INFO - Started process (PID=3967) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:13.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:35:13.492+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:13.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:13.523+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:13.550+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:13.550+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:35:13.566+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:13.565+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:35:13.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.094 seconds
+[2024-02-08T01:35:43.721+0000] {processor.py:161} INFO - Started process (PID=4023) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:43.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:35:43.725+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:43.724+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:43.734+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:35:43.751+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:43.751+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:35:43.765+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:35:43.765+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:35:43.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.057 seconds
+[2024-02-08T01:36:14.688+0000] {processor.py:161} INFO - Started process (PID=4079) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:14.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:36:14.692+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:14.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:14.703+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:14.742+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:14.741+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:36:14.758+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:14.758+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:36:14.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.086 seconds
+[2024-02-08T01:36:45.048+0000] {processor.py:161} INFO - Started process (PID=4135) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:45.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:36:45.055+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:45.055+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:45.071+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:36:45.123+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:45.123+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:36:45.141+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:36:45.141+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:36:45.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.111 seconds
+[2024-02-08T01:37:15.377+0000] {processor.py:161} INFO - Started process (PID=4191) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:15.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:37:15.383+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:15.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:15.412+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:15.433+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:15.433+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:37:15.449+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:15.448+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:37:15.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.090 seconds
+[2024-02-08T01:37:45.638+0000] {processor.py:161} INFO - Started process (PID=4247) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:45.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:37:45.645+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:45.644+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:45.660+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:37:45.680+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:45.680+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:37:45.694+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:37:45.694+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:37:45.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.079 seconds
+[2024-02-08T01:38:16.649+0000] {processor.py:161} INFO - Started process (PID=4304) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:16.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:38:16.652+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:16.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:16.664+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:16.682+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:16.682+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:38:16.696+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:16.696+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:38:16.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.059 seconds
+[2024-02-08T01:38:47.565+0000] {processor.py:161} INFO - Started process (PID=4359) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:47.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:38:47.570+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:47.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:47.582+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:38:47.604+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:47.604+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:38:47.625+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:38:47.625+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:38:47.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.074 seconds
+[2024-02-08T01:39:17.738+0000] {processor.py:161} INFO - Started process (PID=4415) to work on /opt/airflow/dags/my_dag.py
+[2024-02-08T01:39:17.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_dag.py for tasks to queue
+[2024-02-08T01:39:17.742+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:39:17.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:39:17.751+0000] {processor.py:840} INFO - DAG(s) 'lighthouse_challenge' retrieved from /opt/airflow/dags/my_dag.py
+[2024-02-08T01:39:17.763+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:39:17.763+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-08T01:39:17.778+0000] {logging_mixin.py:188} INFO - [2024-02-08T01:39:17.778+0000] {dag.py:3823} INFO - Setting next_dagrun for lighthouse_challenge to 2024-02-08 00:00:00+00:00, run_after=2024-02-09 00:00:00+00:00
+[2024-02-08T01:39:17.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_dag.py took 0.052 seconds

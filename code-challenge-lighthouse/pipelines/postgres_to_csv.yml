@@ -23,22 +23,22 @@ plugins:
 
   - name: tap-postgres--northwind-public-orders
     inherit_from: tap-postgres
-    select:
-    - public-orders.*
     config:
       stream_maps:
         public-orders:
-          freight: str(record['freight']) 
+          freight: str(record['freight'])
 
+    select:
+    - public-orders.*
   - name: tap-postgres--northwind-public-products
     inherit_from: tap-postgres
-    select:
-    - public-products.*
     config:
       stream_maps:
         public-products:
           unit_price: str(record['unit_price'])
 
+    select:
+    - public-products.*
   - name: tap-postgres--northwind-public-shippers
     inherit_from: tap-postgres
     select:
@@ -52,7 +52,7 @@ plugins:
   - name: tap-postgres--northwind-public-us_states
     inherit_from: tap-postgres
     select:
-    - public-us_states.*    
+    - public-us_states.*
 
   loaders:
   - name: target-csv--public-categories

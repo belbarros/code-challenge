@@ -1,0 +1,324 @@
+[2024-02-08T01:10:21.701+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T01:10:18.906657+00:00 [queued]>
+[2024-02-08T01:10:21.704+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T01:10:18.906657+00:00 [queued]>
+[2024-02-08T01:10:21.704+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-08T01:10:21.710+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): extracts.teste> on 2024-02-08 01:10:18.906657+00:00
+[2024-02-08T01:10:21.726+0000] {standard_task_runner.py:60} INFO - Started process 1303 to run task
+[2024-02-08T01:10:21.729+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'lighthouse_challenge', 'extracts.teste', 'manual__2024-02-08T01:10:18.906657+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmp9qe_cb1i']
+[2024-02-08T01:10:21.732+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask extracts.teste
+[2024-02-08T01:10:21.769+0000] {task_command.py:423} INFO - Running <TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T01:10:18.906657+00:00 [running]> on host adad592ee517
+[2024-02-08T01:10:21.817+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='lighthouse_challenge' AIRFLOW_CTX_TASK_ID='extracts.teste' AIRFLOW_CTX_EXECUTION_DATE='2024-02-08T01:10:18.906657+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-08T01:10:18.906657+00:00'
+[2024-02-08T01:10:21.820+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-08T01:10:21.821+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/meltano && python -m venv ./venv && source ./venv/bin/activate && pip install meltano && meltano install && meltano run extract-csv']
+[2024-02-08T01:10:21.828+0000] {subprocess.py:86} INFO - Output:
+[2024-02-08T01:10:28.171+0000] {subprocess.py:93} INFO - Collecting meltano
+[2024-02-08T01:10:28.297+0000] {subprocess.py:93} INFO -   Downloading meltano-3.3.1-py3-none-any.whl (377 kB)
+[2024-02-08T01:10:28.409+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 377.5/377.5 kB 3.4 MB/s eta 0:00:00
+[2024-02-08T01:10:28.503+0000] {subprocess.py:93} INFO - Collecting typing-extensions<5.0.0,>=4.9.0
+[2024-02-08T01:10:28.530+0000] {subprocess.py:93} INFO -   Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+[2024-02-08T01:10:28.634+0000] {subprocess.py:93} INFO - Collecting importlib-resources<7.0.0,>=6.1.1
+[2024-02-08T01:10:28.665+0000] {subprocess.py:93} INFO -   Downloading importlib_resources-6.1.1-py3-none-any.whl (33 kB)
+[2024-02-08T01:10:28.741+0000] {subprocess.py:93} INFO - Collecting python-dotenv<2.0.0,>=1.0.0
+[2024-02-08T01:10:28.770+0000] {subprocess.py:93} INFO -   Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+[2024-02-08T01:10:28.889+0000] {subprocess.py:93} INFO - Collecting virtualenv<21.0.0,>=20.25.0
+[2024-02-08T01:10:28.924+0000] {subprocess.py:93} INFO -   Downloading virtualenv-20.25.0-py3-none-any.whl (3.8 MB)
+[2024-02-08T01:10:29.158+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 16.8 MB/s eta 0:00:00
+[2024-02-08T01:10:29.223+0000] {subprocess.py:93} INFO - Collecting click<9.0,>=8.1
+[2024-02-08T01:10:29.252+0000] {subprocess.py:93} INFO -   Downloading click-8.1.7-py3-none-any.whl (97 kB)
+[2024-02-08T01:10:29.264+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 31.2 MB/s eta 0:00:00
+[2024-02-08T01:10:29.421+0000] {subprocess.py:93} INFO - Collecting psutil<6.0.0,>=5.9.7
+[2024-02-08T01:10:29.450+0000] {subprocess.py:93} INFO -   Downloading psutil-5.9.8.tar.gz (503 kB)
+[2024-02-08T01:10:29.481+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 503.2/503.2 kB 22.3 MB/s eta 0:00:00
+[2024-02-08T01:10:29.535+0000] {subprocess.py:93} INFO -   Installing build dependencies: started
+[2024-02-08T01:10:31.191+0000] {subprocess.py:93} INFO -   Installing build dependencies: finished with status 'done'
+[2024-02-08T01:10:31.193+0000] {subprocess.py:93} INFO -   Getting requirements to build wheel: started
+[2024-02-08T01:10:31.327+0000] {subprocess.py:93} INFO -   Getting requirements to build wheel: finished with status 'done'
+[2024-02-08T01:10:31.330+0000] {subprocess.py:93} INFO -   Preparing metadata (pyproject.toml): started
+[2024-02-08T01:10:31.454+0000] {subprocess.py:93} INFO -   Preparing metadata (pyproject.toml): finished with status 'done'
+[2024-02-08T01:10:31.528+0000] {subprocess.py:93} INFO - Collecting croniter<3.0.0,>=2.0.1
+[2024-02-08T01:10:31.556+0000] {subprocess.py:93} INFO -   Downloading croniter-2.0.1-py2.py3-none-any.whl (19 kB)
+[2024-02-08T01:10:31.623+0000] {subprocess.py:93} INFO - Collecting structlog<25.0.0,>=24.1.0
+[2024-02-08T01:10:31.664+0000] {subprocess.py:93} INFO -   Downloading structlog-24.1.0-py3-none-any.whl (65 kB)
+[2024-02-08T01:10:31.678+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.7/65.7 kB 5.2 MB/s eta 0:00:00
+[2024-02-08T01:10:31.732+0000] {subprocess.py:93} INFO - Collecting python-slugify<9.0.0,>=8.0.1
+[2024-02-08T01:10:31.759+0000] {subprocess.py:93} INFO -   Downloading python_slugify-8.0.3-py2.py3-none-any.whl (10 kB)
+[2024-02-08T01:10:32.031+0000] {subprocess.py:93} INFO - Collecting ruamel.yaml<0.18.0,>=0.17.21
+[2024-02-08T01:10:32.062+0000] {subprocess.py:93} INFO -   Downloading ruamel.yaml-0.17.40-py3-none-any.whl (113 kB)
+[2024-02-08T01:10:32.079+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.7/113.7 kB 16.4 MB/s eta 0:00:00
+[2024-02-08T01:10:32.123+0000] {subprocess.py:93} INFO - Collecting tabulate<0.10.0,>=0.9.0
+[2024-02-08T01:10:32.157+0000] {subprocess.py:93} INFO -   Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+[2024-02-08T01:10:32.259+0000] {subprocess.py:93} INFO - Collecting flatten-dict<1,>=0
+[2024-02-08T01:10:32.290+0000] {subprocess.py:93} INFO -   Downloading flatten_dict-0.4.2-py2.py3-none-any.whl (9.7 kB)
+[2024-02-08T01:10:32.363+0000] {subprocess.py:93} INFO - Collecting jinja2<4.0.0,>=3.1.3
+[2024-02-08T01:10:32.393+0000] {subprocess.py:93} INFO -   Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+[2024-02-08T01:10:32.406+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 30.9 MB/s eta 0:00:00
+[2024-02-08T01:10:32.472+0000] {subprocess.py:93} INFO - Collecting jsonschema<5.0,>=4.20
+[2024-02-08T01:10:32.504+0000] {subprocess.py:93} INFO -   Downloading jsonschema-4.21.1-py3-none-any.whl (85 kB)
+[2024-02-08T01:10:32.521+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.5/85.5 kB 23.6 MB/s eta 0:00:00
+[2024-02-08T01:10:32.585+0000] {subprocess.py:93} INFO - Collecting packaging<24.0,>=23.2
+[2024-02-08T01:10:32.611+0000] {subprocess.py:93} INFO -   Downloading packaging-23.2-py3-none-any.whl (53 kB)
+[2024-02-08T01:10:32.624+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 19.5 MB/s eta 0:00:00
+[2024-02-08T01:10:32.671+0000] {subprocess.py:93} INFO - Collecting atomicwrites<2.0.0,>=1.2.1
+[2024-02-08T01:10:32.672+0000] {subprocess.py:93} INFO -   Using cached atomicwrites-1.4.1-py2.py3-none-any.whl
+[2024-02-08T01:10:32.727+0000] {subprocess.py:93} INFO - Collecting smart-open<7.0.0,>=6.4.0
+[2024-02-08T01:10:32.754+0000] {subprocess.py:93} INFO -   Downloading smart_open-6.4.0-py3-none-any.whl (57 kB)
+[2024-02-08T01:10:32.762+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 11.4 MB/s eta 0:00:00
+[2024-02-08T01:10:32.836+0000] {subprocess.py:93} INFO - Collecting platformdirs<5.0.0,>=4.1.0
+[2024-02-08T01:10:32.865+0000] {subprocess.py:93} INFO -   Downloading platformdirs-4.2.0-py3-none-any.whl (17 kB)
+[2024-02-08T01:10:32.955+0000] {subprocess.py:93} INFO - Collecting alembic<2.0.0,>=1.13.1
+[2024-02-08T01:10:32.982+0000] {subprocess.py:93} INFO -   Downloading alembic-1.13.1-py3-none-any.whl (233 kB)
+[2024-02-08T01:10:33.002+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.4/233.4 kB 12.4 MB/s eta 0:00:00
+[2024-02-08T01:10:33.058+0000] {subprocess.py:93} INFO - Collecting click-default-group<2.0.0,>=1.2.4
+[2024-02-08T01:10:33.087+0000] {subprocess.py:93} INFO -   Downloading click_default_group-1.2.4-py2.py3-none-any.whl (4.1 kB)
+[2024-02-08T01:10:33.139+0000] {subprocess.py:93} INFO - Collecting fasteners<0.20,>=0.19
+[2024-02-08T01:10:33.171+0000] {subprocess.py:93} INFO -   Downloading fasteners-0.19-py3-none-any.whl (18 kB)
+[2024-02-08T01:10:33.230+0000] {subprocess.py:93} INFO - Collecting python-ulid<2.0.0,>=1.1.0
+[2024-02-08T01:10:33.264+0000] {subprocess.py:93} INFO -   Downloading python_ulid-1.1.0-py3-none-any.whl (9.4 kB)
+[2024-02-08T01:10:33.353+0000] {subprocess.py:93} INFO - Collecting check-jsonschema<0.23.0,>=0.22.0
+[2024-02-08T01:10:33.387+0000] {subprocess.py:93} INFO -   Downloading check_jsonschema-0.22.0-py3-none-any.whl (196 kB)
+[2024-02-08T01:10:33.406+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.3/196.3 kB 12.9 MB/s eta 0:00:00
+[2024-02-08T01:10:33.561+0000] {subprocess.py:93} INFO - Collecting rich<14.0.0,>=13.7.0
+[2024-02-08T01:10:33.634+0000] {subprocess.py:93} INFO -   Downloading rich-13.7.0-py3-none-any.whl (240 kB)
+[2024-02-08T01:10:33.655+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.6/240.6 kB 21.2 MB/s eta 0:00:00
+[2024-02-08T01:10:33.724+0000] {subprocess.py:93} INFO - Collecting urllib3<2
+[2024-02-08T01:10:33.752+0000] {subprocess.py:93} INFO -   Downloading urllib3-1.26.18-py2.py3-none-any.whl (143 kB)
+[2024-02-08T01:10:33.768+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.8/143.8 kB 10.8 MB/s eta 0:00:00
+[2024-02-08T01:10:33.839+0000] {subprocess.py:93} INFO - Collecting requests<3.0.0,>=2.31.0
+[2024-02-08T01:10:33.865+0000] {subprocess.py:93} INFO -   Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+[2024-02-08T01:10:33.879+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 5.0 MB/s eta 0:00:00
+[2024-02-08T01:10:33.926+0000] {subprocess.py:93} INFO - Collecting questionary<3.0.0,>=2.0.1
+[2024-02-08T01:10:33.955+0000] {subprocess.py:93} INFO -   Downloading questionary-2.0.1-py3-none-any.whl (34 kB)
+[2024-02-08T01:10:34.074+0000] {subprocess.py:93} INFO - Collecting pyyaml<7.0.0,>=6.0.1
+[2024-02-08T01:10:34.113+0000] {subprocess.py:93} INFO -   Downloading PyYAML-6.0.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (723 kB)
+[2024-02-08T01:10:34.151+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 723.8/723.8 kB 27.4 MB/s eta 0:00:00
+[2024-02-08T01:10:34.205+0000] {subprocess.py:93} INFO - Collecting tzlocal<6.0,>=5.2
+[2024-02-08T01:10:34.235+0000] {subprocess.py:93} INFO -   Downloading tzlocal-5.2-py3-none-any.whl (17 kB)
+[2024-02-08T01:10:34.293+0000] {subprocess.py:93} INFO - Collecting pyjwt<3.0.0,>=2.6.0
+[2024-02-08T01:10:34.320+0000] {subprocess.py:93} INFO -   Downloading PyJWT-2.8.0-py3-none-any.whl (22 kB)
+[2024-02-08T01:10:34.387+0000] {subprocess.py:93} INFO - Collecting click-didyoumean<0.4.0,>=0.3.0
+[2024-02-08T01:10:34.416+0000] {subprocess.py:93} INFO -   Downloading click_didyoumean-0.3.0-py3-none-any.whl (2.7 kB)
+[2024-02-08T01:10:34.469+0000] {subprocess.py:93} INFO - Collecting aiodocker<0.22.0,>=0.21.0
+[2024-02-08T01:10:34.498+0000] {subprocess.py:93} INFO -   Downloading aiodocker-0.21.0-py3-none-any.whl (34 kB)
+[2024-02-08T01:10:34.571+0000] {subprocess.py:93} INFO - Collecting yaspin<3.0.0,>=2.3.0
+[2024-02-08T01:10:34.602+0000] {subprocess.py:93} INFO -   Downloading yaspin-2.5.0-py3-none-any.whl (18 kB)
+[2024-02-08T01:10:34.659+0000] {subprocess.py:93} INFO - Collecting snowplow-tracker<2.0.0,>=1.0.1
+[2024-02-08T01:10:34.692+0000] {subprocess.py:93} INFO -   Downloading snowplow_tracker-1.0.1-py3-none-any.whl (43 kB)
+[2024-02-08T01:10:34.703+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.4/43.4 kB 3.8 MB/s eta 0:00:00
+[2024-02-08T01:10:35.106+0000] {subprocess.py:93} INFO - Collecting sqlalchemy<3.0.0,>=2.0.25
+[2024-02-08T01:10:35.137+0000] {subprocess.py:93} INFO -   Downloading SQLAlchemy-2.0.25-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.1 MB)
+[2024-02-08T01:10:35.278+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 23.7 MB/s eta 0:00:00
+[2024-02-08T01:10:35.332+0000] {subprocess.py:93} INFO - Collecting python-dateutil<3.0.0,>=2.8.2
+[2024-02-08T01:10:35.365+0000] {subprocess.py:93} INFO -   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+[2024-02-08T01:10:35.388+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 11.7 MB/s eta 0:00:00
+[2024-02-08T01:10:35.733+0000] {subprocess.py:93} INFO - Collecting aiohttp>=3.6
+[2024-02-08T01:10:35.767+0000] {subprocess.py:93} INFO -   Downloading aiohttp-3.9.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.3 MB)
+[2024-02-08T01:10:35.819+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 25.4 MB/s eta 0:00:00
+[2024-02-08T01:10:35.890+0000] {subprocess.py:93} INFO - Collecting Mako
+[2024-02-08T01:10:35.924+0000] {subprocess.py:93} INFO -   Downloading Mako-1.3.2-py3-none-any.whl (78 kB)
+[2024-02-08T01:10:35.937+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 33.5 MB/s eta 0:00:00
+[2024-02-08T01:10:36.027+0000] {subprocess.py:93} INFO - Collecting importlib-metadata
+[2024-02-08T01:10:36.053+0000] {subprocess.py:93} INFO -   Downloading importlib_metadata-7.0.1-py3-none-any.whl (23 kB)
+[2024-02-08T01:10:36.147+0000] {subprocess.py:93} INFO - Collecting ruamel.yaml<0.18.0,>=0.17.21
+[2024-02-08T01:10:36.181+0000] {subprocess.py:93} INFO -   Downloading ruamel.yaml-0.17.21-py3-none-any.whl (109 kB)
+[2024-02-08T01:10:36.204+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.5/109.5 kB 10.1 MB/s eta 0:00:00
+[2024-02-08T01:10:36.283+0000] {subprocess.py:93} INFO - Collecting ruamel.yaml.clib>=0.2.6
+[2024-02-08T01:10:36.321+0000] {subprocess.py:93} INFO -   Downloading ruamel.yaml.clib-0.2.8-cp38-cp38-manylinux_2_24_aarch64.whl (641 kB)
+[2024-02-08T01:10:36.352+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 641.5/641.5 kB 31.9 MB/s eta 0:00:00
+[2024-02-08T01:10:36.448+0000] {subprocess.py:93} INFO - Collecting pytz>2021.1
+[2024-02-08T01:10:36.476+0000] {subprocess.py:93} INFO -   Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+[2024-02-08T01:10:36.505+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 505.5/505.5 kB 25.5 MB/s eta 0:00:00
+[2024-02-08T01:10:36.558+0000] {subprocess.py:93} INFO - Collecting six<2.0,>=1.12
+[2024-02-08T01:10:36.585+0000] {subprocess.py:93} INFO -   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+[2024-02-08T01:10:36.650+0000] {subprocess.py:93} INFO - Collecting zipp>=3.1.0
+[2024-02-08T01:10:36.679+0000] {subprocess.py:93} INFO -   Downloading zipp-3.17.0-py3-none-any.whl (7.4 kB)
+[2024-02-08T01:10:36.797+0000] {subprocess.py:93} INFO - Collecting MarkupSafe>=2.0
+[2024-02-08T01:10:36.834+0000] {subprocess.py:93} INFO -   Downloading MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (26 kB)
+[2024-02-08T01:10:36.912+0000] {subprocess.py:93} INFO - Collecting attrs>=22.2.0
+[2024-02-08T01:10:36.945+0000] {subprocess.py:93} INFO -   Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+[2024-02-08T01:10:36.957+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 21.8 MB/s eta 0:00:00
+[2024-02-08T01:10:37.003+0000] {subprocess.py:93} INFO - Collecting pkgutil-resolve-name>=1.3.10
+[2024-02-08T01:10:37.035+0000] {subprocess.py:93} INFO -   Downloading pkgutil_resolve_name-1.3.10-py3-none-any.whl (4.7 kB)
+[2024-02-08T01:10:37.300+0000] {subprocess.py:93} INFO - Collecting rpds-py>=0.7.1
+[2024-02-08T01:10:37.339+0000] {subprocess.py:93} INFO -   Downloading rpds_py-0.17.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.2 MB)
+[2024-02-08T01:10:37.392+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 23.1 MB/s eta 0:00:00
+[2024-02-08T01:10:37.440+0000] {subprocess.py:93} INFO - Collecting jsonschema-specifications>=2023.03.6
+[2024-02-08T01:10:37.468+0000] {subprocess.py:93} INFO -   Downloading jsonschema_specifications-2023.12.1-py3-none-any.whl (18 kB)
+[2024-02-08T01:10:37.553+0000] {subprocess.py:93} INFO - Collecting referencing>=0.28.4
+[2024-02-08T01:10:37.579+0000] {subprocess.py:93} INFO -   Downloading referencing-0.33.0-py3-none-any.whl (26 kB)
+[2024-02-08T01:10:37.679+0000] {subprocess.py:93} INFO - Collecting text-unidecode>=1.3
+[2024-02-08T01:10:37.717+0000] {subprocess.py:93} INFO -   Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+[2024-02-08T01:10:37.731+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.2/78.2 kB 7.4 MB/s eta 0:00:00
+[2024-02-08T01:10:37.833+0000] {subprocess.py:93} INFO - Collecting prompt_toolkit<=3.0.36,>=2.0
+[2024-02-08T01:10:37.868+0000] {subprocess.py:93} INFO -   Downloading prompt_toolkit-3.0.36-py3-none-any.whl (386 kB)
+[2024-02-08T01:10:37.893+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.4/386.4 kB 16.5 MB/s eta 0:00:00
+[2024-02-08T01:10:37.956+0000] {subprocess.py:93} INFO - Collecting certifi>=2017.4.17
+[2024-02-08T01:10:37.987+0000] {subprocess.py:93} INFO -   Downloading certifi-2024.2.2-py3-none-any.whl (163 kB)
+[2024-02-08T01:10:38.002+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 kB 35.8 MB/s eta 0:00:00
+[2024-02-08T01:10:38.273+0000] {subprocess.py:93} INFO - Collecting charset-normalizer<4,>=2
+[2024-02-08T01:10:38.310+0000] {subprocess.py:93} INFO -   Downloading charset_normalizer-3.3.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (137 kB)
+[2024-02-08T01:10:38.327+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.5/137.5 kB 16.8 MB/s eta 0:00:00
+[2024-02-08T01:10:38.389+0000] {subprocess.py:93} INFO - Collecting idna<4,>=2.5
+[2024-02-08T01:10:38.418+0000] {subprocess.py:93} INFO -   Downloading idna-3.6-py3-none-any.whl (61 kB)
+[2024-02-08T01:10:38.429+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 24.1 MB/s eta 0:00:00
+[2024-02-08T01:10:38.492+0000] {subprocess.py:93} INFO - Collecting markdown-it-py>=2.2.0
+[2024-02-08T01:10:38.521+0000] {subprocess.py:93} INFO -   Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+[2024-02-08T01:10:38.536+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 22.9 MB/s eta 0:00:00
+[2024-02-08T01:10:38.598+0000] {subprocess.py:93} INFO - Collecting pygments<3.0.0,>=2.13.0
+[2024-02-08T01:10:38.643+0000] {subprocess.py:93} INFO -   Downloading pygments-2.17.2-py3-none-any.whl (1.2 MB)
+[2024-02-08T01:10:38.696+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 26.9 MB/s eta 0:00:00
+[2024-02-08T01:10:38.993+0000] {subprocess.py:93} INFO - Collecting greenlet!=0.4.17
+[2024-02-08T01:10:39.032+0000] {subprocess.py:93} INFO -   Downloading greenlet-3.0.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (658 kB)
+[2024-02-08T01:10:39.072+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 658.5/658.5 kB 21.8 MB/s eta 0:00:00
+[2024-02-08T01:10:39.181+0000] {subprocess.py:93} INFO - Collecting backports.zoneinfo
+[2024-02-08T01:10:39.212+0000] {subprocess.py:93} INFO -   Downloading backports.zoneinfo-0.2.1.tar.gz (74 kB)
+[2024-02-08T01:10:39.242+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.1/74.1 kB 4.3 MB/s eta 0:00:00
+[2024-02-08T01:10:39.266+0000] {subprocess.py:93} INFO -   Installing build dependencies: started
+[2024-02-08T01:10:40.559+0000] {subprocess.py:93} INFO -   Installing build dependencies: finished with status 'done'
+[2024-02-08T01:10:40.562+0000] {subprocess.py:93} INFO -   Getting requirements to build wheel: started
+[2024-02-08T01:10:40.669+0000] {subprocess.py:93} INFO -   Getting requirements to build wheel: finished with status 'done'
+[2024-02-08T01:10:40.682+0000] {subprocess.py:93} INFO -   Preparing metadata (pyproject.toml): started
+[2024-02-08T01:10:40.805+0000] {subprocess.py:93} INFO -   Preparing metadata (pyproject.toml): finished with status 'done'
+[2024-02-08T01:10:40.913+0000] {subprocess.py:93} INFO - Collecting filelock<4,>=3.12.2
+[2024-02-08T01:10:40.942+0000] {subprocess.py:93} INFO -   Downloading filelock-3.13.1-py3-none-any.whl (11 kB)
+[2024-02-08T01:10:41.000+0000] {subprocess.py:93} INFO - Collecting distlib<1,>=0.3.7
+[2024-02-08T01:10:41.036+0000] {subprocess.py:93} INFO -   Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+[2024-02-08T01:10:41.059+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 29.5 MB/s eta 0:00:00
+[2024-02-08T01:10:41.120+0000] {subprocess.py:93} INFO - Collecting termcolor<3.0,>=2.3
+[2024-02-08T01:10:41.151+0000] {subprocess.py:93} INFO -   Downloading termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+[2024-02-08T01:10:41.250+0000] {subprocess.py:93} INFO - Collecting async-timeout<5.0,>=4.0
+[2024-02-08T01:10:41.280+0000] {subprocess.py:93} INFO -   Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+[2024-02-08T01:10:41.448+0000] {subprocess.py:93} INFO - Collecting yarl<2.0,>=1.0
+[2024-02-08T01:10:41.476+0000] {subprocess.py:93} INFO -   Downloading yarl-1.9.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (305 kB)
+[2024-02-08T01:10:41.500+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 305.5/305.5 kB 15.7 MB/s eta 0:00:00
+[2024-02-08T01:10:41.717+0000] {subprocess.py:93} INFO - Collecting multidict<7.0,>=4.5
+[2024-02-08T01:10:41.746+0000] {subprocess.py:93} INFO -   Downloading multidict-6.0.5-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (130 kB)
+[2024-02-08T01:10:41.762+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.7/130.7 kB 9.4 MB/s eta 0:00:00
+[2024-02-08T01:10:41.817+0000] {subprocess.py:93} INFO - Collecting aiosignal>=1.1.2
+[2024-02-08T01:10:41.854+0000] {subprocess.py:93} INFO -   Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+[2024-02-08T01:10:42.066+0000] {subprocess.py:93} INFO - Collecting frozenlist>=1.1.1
+[2024-02-08T01:10:42.108+0000] {subprocess.py:93} INFO -   Downloading frozenlist-1.4.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (239 kB)
+[2024-02-08T01:10:42.127+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.5/239.5 kB 20.7 MB/s eta 0:00:00
+[2024-02-08T01:10:42.238+0000] {subprocess.py:93} INFO - Collecting mdurl~=0.1
+[2024-02-08T01:10:42.275+0000] {subprocess.py:93} INFO -   Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+[2024-02-08T01:10:42.344+0000] {subprocess.py:93} INFO - Collecting wcwidth
+[2024-02-08T01:10:42.375+0000] {subprocess.py:93} INFO -   Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+[2024-02-08T01:10:42.503+0000] {subprocess.py:93} INFO - Building wheels for collected packages: psutil, backports.zoneinfo
+[2024-02-08T01:10:42.505+0000] {subprocess.py:93} INFO -   Building wheel for psutil (pyproject.toml): started
+[2024-02-08T01:10:42.713+0000] {subprocess.py:93} INFO -   Building wheel for psutil (pyproject.toml): finished with status 'error'
+[2024-02-08T01:10:42.719+0000] {subprocess.py:93} INFO -   error: subprocess-exited-with-error
+[2024-02-08T01:10:42.719+0000] {subprocess.py:93} INFO - 
+[2024-02-08T01:10:42.720+0000] {subprocess.py:93} INFO -   × Building wheel for psutil (pyproject.toml) did not run successfully.
+[2024-02-08T01:10:42.720+0000] {subprocess.py:93} INFO -   │ exit code: 1
+[2024-02-08T01:10:42.720+0000] {subprocess.py:93} INFO -   ╰─> [46 lines of output]
+[2024-02-08T01:10:42.720+0000] {subprocess.py:93} INFO -       running bdist_wheel
+[2024-02-08T01:10:42.720+0000] {subprocess.py:93} INFO -       running build
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       running build_py
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       creating build
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       copying psutil/_pslinux.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.721+0000] {subprocess.py:93} INFO -       copying psutil/_psposix.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/_common.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/_psaix.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/_pswindows.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/_psbsd.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/_psosx.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.722+0000] {subprocess.py:93} INFO -       copying psutil/__init__.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       copying psutil/_pssunos.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       copying psutil/_compat.py -> build/lib.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_unicode.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_windows.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.723+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_bsd.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_testutils.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_misc.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_sunos.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_aix.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_system.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.724+0000] {subprocess.py:93} INFO -       copying psutil/tests/__main__.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_connections.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_contracts.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/__init__.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_linux.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_osx.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.725+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_process_all.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_posix.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       copying psutil/tests/runner.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_memleaks.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       copying psutil/tests/test_process.py -> build/lib.linux-aarch64-cpython-38/psutil/tests
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       running build_ext
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       building 'psutil._psutil_linux' extension
+[2024-02-08T01:10:42.726+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38
+[2024-02-08T01:10:42.727+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38/psutil
+[2024-02-08T01:10:42.727+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38/psutil/arch
+[2024-02-08T01:10:42.727+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38/psutil/arch/linux
+[2024-02-08T01:10:42.727+0000] {subprocess.py:93} INFO -       gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -DPSUTIL_POSIX=1 -DPSUTIL_SIZEOF_PID_T=4 -DPSUTIL_VERSION=598 -DPy_LIMITED_API=0x03060000 -DPSUTIL_ETHTOOL_MISSING_TYPES=1 -DPSUTIL_LINUX=1 -I/opt/***/meltano/venv/include -I/usr/local/include/python3.8 -c psutil/_psutil_common.c -o build/temp.linux-aarch64-cpython-38/psutil/_psutil_common.o
+[2024-02-08T01:10:42.727+0000] {subprocess.py:93} INFO -       psutil could not be installed from sources because gcc is not installed. Try running:
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -         sudo apt-get install gcc python3-dev
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -       error: command 'gcc' failed: Permission denied
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -       [end of output]
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO - 
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -   note: This error originates from a subprocess, and is likely not a problem with pip.
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -   ERROR: Failed building wheel for psutil
+[2024-02-08T01:10:42.728+0000] {subprocess.py:93} INFO -   Building wheel for backports.zoneinfo (pyproject.toml): started
+[2024-02-08T01:10:42.834+0000] {subprocess.py:93} INFO -   Building wheel for backports.zoneinfo (pyproject.toml): finished with status 'error'
+[2024-02-08T01:10:42.837+0000] {subprocess.py:93} INFO -   error: subprocess-exited-with-error
+[2024-02-08T01:10:42.837+0000] {subprocess.py:93} INFO - 
+[2024-02-08T01:10:42.838+0000] {subprocess.py:93} INFO -   × Building wheel for backports.zoneinfo (pyproject.toml) did not run successfully.
+[2024-02-08T01:10:42.838+0000] {subprocess.py:93} INFO -   │ exit code: 1
+[2024-02-08T01:10:42.838+0000] {subprocess.py:93} INFO -   ╰─> [35 lines of output]
+[2024-02-08T01:10:42.838+0000] {subprocess.py:93} INFO -       running bdist_wheel
+[2024-02-08T01:10:42.838+0000] {subprocess.py:93} INFO -       running build
+[2024-02-08T01:10:42.839+0000] {subprocess.py:93} INFO -       running build_py
+[2024-02-08T01:10:42.839+0000] {subprocess.py:93} INFO -       creating build
+[2024-02-08T01:10:42.839+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38
+[2024-02-08T01:10:42.839+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38/backports
+[2024-02-08T01:10:42.839+0000] {subprocess.py:93} INFO -       copying src/backports/__init__.py -> build/lib.linux-aarch64-cpython-38/backports
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       creating build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/_common.py -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/_version.py -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/__init__.py -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/_zoneinfo.py -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.840+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/_tzpath.py -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       running egg_info
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       writing src/backports.zoneinfo.egg-info/PKG-INFO
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       writing dependency_links to src/backports.zoneinfo.egg-info/dependency_links.txt
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       writing requirements to src/backports.zoneinfo.egg-info/requires.txt
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       writing top-level names to src/backports.zoneinfo.egg-info/top_level.txt
+[2024-02-08T01:10:42.841+0000] {subprocess.py:93} INFO -       reading manifest file 'src/backports.zoneinfo.egg-info/SOURCES.txt'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       reading manifest template 'MANIFEST.in'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       warning: no files found matching '*.png' under directory 'docs'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       warning: no files found matching '*.svg' under directory 'docs'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       no previously-included directories found matching 'docs/_build'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       no previously-included directories found matching 'docs/_output'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       adding license file 'LICENSE'
+[2024-02-08T01:10:42.842+0000] {subprocess.py:93} INFO -       adding license file 'licenses/LICENSE_APACHE'
+[2024-02-08T01:10:42.843+0000] {subprocess.py:93} INFO -       writing manifest file 'src/backports.zoneinfo.egg-info/SOURCES.txt'
+[2024-02-08T01:10:42.843+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/__init__.pyi -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.843+0000] {subprocess.py:93} INFO -       copying src/backports/zoneinfo/py.typed -> build/lib.linux-aarch64-cpython-38/backports/zoneinfo
+[2024-02-08T01:10:42.843+0000] {subprocess.py:93} INFO -       running build_ext
+[2024-02-08T01:10:42.843+0000] {subprocess.py:93} INFO -       building 'backports.zoneinfo._czoneinfo' extension
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO -       creating build/temp.linux-aarch64-cpython-38/lib
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO -       gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/opt/***/meltano/venv/include -I/usr/local/include/python3.8 -c lib/zoneinfo_module.c -o build/temp.linux-aarch64-cpython-38/lib/zoneinfo_module.o -std=c99
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO -       error: command 'gcc' failed: Permission denied
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO -       [end of output]
+[2024-02-08T01:10:42.844+0000] {subprocess.py:93} INFO - 
+[2024-02-08T01:10:42.845+0000] {subprocess.py:93} INFO -   note: This error originates from a subprocess, and is likely not a problem with pip.
+[2024-02-08T01:10:42.845+0000] {subprocess.py:93} INFO -   ERROR: Failed building wheel for backports.zoneinfo
+[2024-02-08T01:10:42.845+0000] {subprocess.py:93} INFO - Failed to build psutil backports.zoneinfo
+[2024-02-08T01:10:42.845+0000] {subprocess.py:93} INFO - ERROR: Could not build wheels for psutil, backports.zoneinfo, which is required to install pyproject.toml-based projects
+[2024-02-08T01:10:42.846+0000] {subprocess.py:93} INFO - 
+[2024-02-08T01:10:42.846+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.0.1 -> 24.0
+[2024-02-08T01:10:42.846+0000] {subprocess.py:93} INFO - [notice] To update, run: pip install --upgrade pip
+[2024-02-08T01:10:43.233+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-08T01:10:43.252+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-08T01:10:43.262+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=lighthouse_challenge, task_id=extracts.teste, execution_date=20240208T011018, start_date=20240208T011021, end_date=20240208T011043
+[2024-02-08T01:10:43.284+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 5 for task extracts.teste (Bash command failed. The command returned a non-zero exit code 1.; 1303)
+[2024-02-08T01:10:43.318+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-08T01:10:43.337+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

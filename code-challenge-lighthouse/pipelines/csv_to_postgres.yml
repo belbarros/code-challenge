@@ -49,7 +49,6 @@ plugins:
   - name: meltano-map-transformer
     variant: meltano
     pip_url: git+https://github.com/MeltanoLabs/meltano-map-transform.git
-
 jobs:
 - name: send-to-lighthouse
   tasks:

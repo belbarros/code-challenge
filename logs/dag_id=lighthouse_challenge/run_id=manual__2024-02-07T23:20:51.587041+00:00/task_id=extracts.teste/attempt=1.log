@@ -1,0 +1,99 @@
+[2024-02-07T23:20:53.191+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T23:20:51.587041+00:00 [queued]>
+[2024-02-07T23:20:53.194+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T23:20:51.587041+00:00 [queued]>
+[2024-02-07T23:20:53.194+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-07T23:20:53.203+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): extracts.teste> on 2024-02-07 23:20:51.587041+00:00
+[2024-02-07T23:20:53.208+0000] {standard_task_runner.py:60} INFO - Started process 2140 to run task
+[2024-02-07T23:20:53.212+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'lighthouse_challenge', 'extracts.teste', 'manual__2024-02-07T23:20:51.587041+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpst9f91aj']
+[2024-02-07T23:20:53.214+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask extracts.teste
+[2024-02-07T23:20:53.237+0000] {task_command.py:423} INFO - Running <TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T23:20:51.587041+00:00 [running]> on host 98e8e7f947a8
+[2024-02-07T23:20:53.279+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='lighthouse_challenge' AIRFLOW_CTX_TASK_ID='extracts.teste' AIRFLOW_CTX_EXECUTION_DATE='2024-02-07T23:20:51.587041+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-07T23:20:51.587041+00:00'
+[2024-02-07T23:20:53.281+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-07T23:20:53.281+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'pip install meltano && meltano init && meltano run extract-csv']
+[2024-02-07T23:20:53.289+0000] {subprocess.py:86} INFO - Output:
+[2024-02-07T23:20:53.536+0000] {subprocess.py:93} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2024-02-07T23:20:53.664+0000] {subprocess.py:93} INFO - Requirement already satisfied: meltano in /home/***/.local/lib/python3.8/site-packages (3.3.1)
+[2024-02-07T23:20:53.683+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiodocker<0.22.0,>=0.21.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.21.0)
+[2024-02-07T23:20:53.683+0000] {subprocess.py:93} INFO - Requirement already satisfied: alembic<2.0.0,>=1.13.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.13.1)
+[2024-02-07T23:20:53.683+0000] {subprocess.py:93} INFO - Requirement already satisfied: atomicwrites<2.0.0,>=1.2.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.4.1)
+[2024-02-07T23:20:53.684+0000] {subprocess.py:93} INFO - Requirement already satisfied: check-jsonschema<0.23.0,>=0.22.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.22.0)
+[2024-02-07T23:20:53.684+0000] {subprocess.py:93} INFO - Requirement already satisfied: click<9.0,>=8.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (8.1.7)
+[2024-02-07T23:20:53.684+0000] {subprocess.py:93} INFO - Requirement already satisfied: click-default-group<2.0.0,>=1.2.4 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.2.4)
+[2024-02-07T23:20:53.685+0000] {subprocess.py:93} INFO - Requirement already satisfied: click-didyoumean<0.4.0,>=0.3.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.3.0)
+[2024-02-07T23:20:53.685+0000] {subprocess.py:93} INFO - Requirement already satisfied: croniter<3.0.0,>=2.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.1)
+[2024-02-07T23:20:53.685+0000] {subprocess.py:93} INFO - Requirement already satisfied: fasteners<0.20,>=0.19 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.19)
+[2024-02-07T23:20:53.686+0000] {subprocess.py:93} INFO - Requirement already satisfied: flatten-dict<1,>=0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.4.2)
+[2024-02-07T23:20:53.686+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-resources<7.0.0,>=6.1.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.1.1)
+[2024-02-07T23:20:53.686+0000] {subprocess.py:93} INFO - Requirement already satisfied: jinja2<4.0.0,>=3.1.3 in /home/***/.local/lib/python3.8/site-packages (from meltano) (3.1.3)
+[2024-02-07T23:20:53.687+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema<5.0,>=4.20 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.20.0)
+[2024-02-07T23:20:53.687+0000] {subprocess.py:93} INFO - Requirement already satisfied: packaging<24.0,>=23.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (23.2)
+[2024-02-07T23:20:53.687+0000] {subprocess.py:93} INFO - Requirement already satisfied: platformdirs<5.0.0,>=4.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.2.0)
+[2024-02-07T23:20:53.687+0000] {subprocess.py:93} INFO - Requirement already satisfied: psutil<6.0.0,>=5.9.7 in /home/***/.local/lib/python3.8/site-packages (from meltano) (5.9.7)
+[2024-02-07T23:20:53.688+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyjwt<3.0.0,>=2.6.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.8.0)
+[2024-02-07T23:20:53.688+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil<3.0.0,>=2.8.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.8.2)
+[2024-02-07T23:20:53.688+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dotenv<2.0.0,>=1.0.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.0.0)
+[2024-02-07T23:20:53.689+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-slugify<9.0.0,>=8.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (8.0.1)
+[2024-02-07T23:20:53.689+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-ulid<2.0.0,>=1.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.1.0)
+[2024-02-07T23:20:53.689+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyyaml<7.0.0,>=6.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.0.1)
+[2024-02-07T23:20:53.690+0000] {subprocess.py:93} INFO - Requirement already satisfied: questionary<3.0.0,>=2.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.1)
+[2024-02-07T23:20:53.690+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests<3.0.0,>=2.31.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.31.0)
+[2024-02-07T23:20:53.690+0000] {subprocess.py:93} INFO - Requirement already satisfied: rich<14.0.0,>=13.7.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (13.7.0)
+[2024-02-07T23:20:53.691+0000] {subprocess.py:93} INFO - Requirement already satisfied: ruamel.yaml<0.18.0,>=0.17.21 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.17.21)
+[2024-02-07T23:20:53.691+0000] {subprocess.py:93} INFO - Requirement already satisfied: smart-open<7.0.0,>=6.4.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.4.0)
+[2024-02-07T23:20:53.691+0000] {subprocess.py:93} INFO - Requirement already satisfied: snowplow-tracker<2.0.0,>=1.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.0.1)
+[2024-02-07T23:20:53.692+0000] {subprocess.py:93} INFO - Requirement already satisfied: sqlalchemy<3.0.0,>=2.0.25 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.25)
+[2024-02-07T23:20:53.692+0000] {subprocess.py:93} INFO - Requirement already satisfied: structlog<25.0.0,>=24.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (24.1.0)
+[2024-02-07T23:20:53.692+0000] {subprocess.py:93} INFO - Requirement already satisfied: tabulate<0.10.0,>=0.9.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.9.0)
+[2024-02-07T23:20:53.692+0000] {subprocess.py:93} INFO - Requirement already satisfied: typing-extensions<5.0.0,>=4.9.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.9.0)
+[2024-02-07T23:20:53.693+0000] {subprocess.py:93} INFO - Requirement already satisfied: tzlocal<6.0,>=5.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (5.2)
+[2024-02-07T23:20:53.693+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3<2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.26.18)
+[2024-02-07T23:20:53.693+0000] {subprocess.py:93} INFO - Requirement already satisfied: virtualenv<21.0.0,>=20.25.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (20.25.0)
+[2024-02-07T23:20:53.694+0000] {subprocess.py:93} INFO - Requirement already satisfied: yaspin<3.0.0,>=2.3.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.5.0)
+[2024-02-07T23:20:53.695+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiohttp>=3.6 in /home/***/.local/lib/python3.8/site-packages (from aiodocker<0.22.0,>=0.21.0->meltano) (3.9.1)
+[2024-02-07T23:20:53.699+0000] {subprocess.py:93} INFO - Requirement already satisfied: Mako in /home/***/.local/lib/python3.8/site-packages (from alembic<2.0.0,>=1.13.1->meltano) (1.3.0)
+[2024-02-07T23:20:53.699+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-metadata in /home/***/.local/lib/python3.8/site-packages (from alembic<2.0.0,>=1.13.1->meltano) (6.11.0)
+[2024-02-07T23:20:53.708+0000] {subprocess.py:93} INFO - Requirement already satisfied: ruamel.yaml.clib>=0.2.6 in /home/***/.local/lib/python3.8/site-packages (from ruamel.yaml<0.18.0,>=0.17.21->meltano) (0.2.8)
+[2024-02-07T23:20:53.714+0000] {subprocess.py:93} INFO - Requirement already satisfied: pytz>2021.1 in /home/***/.local/lib/python3.8/site-packages (from croniter<3.0.0,>=2.0.1->meltano) (2023.3.post1)
+[2024-02-07T23:20:53.717+0000] {subprocess.py:93} INFO - Requirement already satisfied: six<2.0,>=1.12 in /home/***/.local/lib/python3.8/site-packages (from flatten-dict<1,>=0->meltano) (1.16.0)
+[2024-02-07T23:20:53.727+0000] {subprocess.py:93} INFO - Requirement already satisfied: zipp>=3.1.0 in /home/***/.local/lib/python3.8/site-packages (from importlib-resources<7.0.0,>=6.1.1->meltano) (3.17.0)
+[2024-02-07T23:20:53.730+0000] {subprocess.py:93} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /home/***/.local/lib/python3.8/site-packages (from jinja2<4.0.0,>=3.1.3->meltano) (2.1.3)
+[2024-02-07T23:20:53.738+0000] {subprocess.py:93} INFO - Requirement already satisfied: attrs>=22.2.0 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (23.2.0)
+[2024-02-07T23:20:53.739+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (2023.12.1)
+[2024-02-07T23:20:53.739+0000] {subprocess.py:93} INFO - Requirement already satisfied: pkgutil-resolve-name>=1.3.10 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (1.3.10)
+[2024-02-07T23:20:53.740+0000] {subprocess.py:93} INFO - Requirement already satisfied: referencing>=0.28.4 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (0.32.1)
+[2024-02-07T23:20:53.740+0000] {subprocess.py:93} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (0.17.1)
+[2024-02-07T23:20:53.763+0000] {subprocess.py:93} INFO - Requirement already satisfied: text-unidecode>=1.3 in /home/***/.local/lib/python3.8/site-packages (from python-slugify<9.0.0,>=8.0.1->meltano) (1.3)
+[2024-02-07T23:20:53.768+0000] {subprocess.py:93} INFO - Requirement already satisfied: prompt_toolkit<=3.0.36,>=2.0 in /home/***/.local/lib/python3.8/site-packages (from questionary<3.0.0,>=2.0.1->meltano) (3.0.36)
+[2024-02-07T23:20:53.772+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (3.3.2)
+[2024-02-07T23:20:53.773+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (3.6)
+[2024-02-07T23:20:53.773+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi>=2017.4.17 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (2023.11.17)
+[2024-02-07T23:20:53.777+0000] {subprocess.py:93} INFO - Requirement already satisfied: markdown-it-py>=2.2.0 in /home/***/.local/lib/python3.8/site-packages (from rich<14.0.0,>=13.7.0->meltano) (3.0.0)
+[2024-02-07T23:20:53.778+0000] {subprocess.py:93} INFO - Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/***/.local/lib/python3.8/site-packages (from rich<14.0.0,>=13.7.0->meltano) (2.17.2)
+[2024-02-07T23:20:53.825+0000] {subprocess.py:93} INFO - Requirement already satisfied: greenlet!=0.4.17 in /home/***/.local/lib/python3.8/site-packages (from sqlalchemy<3.0.0,>=2.0.25->meltano) (3.0.3)
+[2024-02-07T23:20:53.849+0000] {subprocess.py:93} INFO - Requirement already satisfied: backports.zoneinfo in /home/***/.local/lib/python3.8/site-packages (from tzlocal<6.0,>=5.2->meltano) (0.2.1)
+[2024-02-07T23:20:53.868+0000] {subprocess.py:93} INFO - Requirement already satisfied: distlib<1,>=0.3.7 in /home/***/.local/lib/python3.8/site-packages (from virtualenv<21.0.0,>=20.25.0->meltano) (0.3.8)
+[2024-02-07T23:20:53.869+0000] {subprocess.py:93} INFO - Requirement already satisfied: filelock<4,>=3.12.2 in /home/***/.local/lib/python3.8/site-packages (from virtualenv<21.0.0,>=20.25.0->meltano) (3.13.1)
+[2024-02-07T23:20:53.872+0000] {subprocess.py:93} INFO - Requirement already satisfied: termcolor<3.0,>=2.3 in /home/***/.local/lib/python3.8/site-packages (from yaspin<3.0.0,>=2.3.0->meltano) (2.4.0)
+[2024-02-07T23:20:53.884+0000] {subprocess.py:93} INFO - Requirement already satisfied: multidict<7.0,>=4.5 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (6.0.4)
+[2024-02-07T23:20:53.887+0000] {subprocess.py:93} INFO - Requirement already satisfied: yarl<2.0,>=1.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.9.4)
+[2024-02-07T23:20:53.887+0000] {subprocess.py:93} INFO - Requirement already satisfied: frozenlist>=1.1.1 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.4.1)
+[2024-02-07T23:20:53.887+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiosignal>=1.1.2 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.3.1)
+[2024-02-07T23:20:53.887+0000] {subprocess.py:93} INFO - Requirement already satisfied: async-timeout<5.0,>=4.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (4.0.3)
+[2024-02-07T23:20:53.950+0000] {subprocess.py:93} INFO - Requirement already satisfied: mdurl~=0.1 in /home/***/.local/lib/python3.8/site-packages (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.7.0->meltano) (0.1.2)
+[2024-02-07T23:20:53.969+0000] {subprocess.py:93} INFO - Requirement already satisfied: wcwidth in /home/***/.local/lib/python3.8/site-packages (from prompt_toolkit<=3.0.36,>=2.0->questionary<3.0.0,>=2.0.1->meltano) (0.2.13)
+[2024-02-07T23:20:55.440+0000] {subprocess.py:93} INFO - 
+[2024-02-07T23:20:55.444+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.3.2 -> 24.0
+[2024-02-07T23:20:55.444+0000] {subprocess.py:93} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-02-07T23:20:56.437+0000] {subprocess.py:93} INFO - We need a project name to get started!
+[2024-02-07T23:20:56.440+0000] {subprocess.py:93} INFO - Enter a name now to create a Meltano project: Aborted!
+[2024-02-07T23:20:56.570+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-07T23:20:56.615+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-07T23:20:56.620+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=lighthouse_challenge, task_id=extracts.teste, execution_date=20240207T232051, start_date=20240207T232053, end_date=20240207T232056
+[2024-02-07T23:20:56.633+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 25 for task extracts.teste (Bash command failed. The command returned a non-zero exit code 1.; 2140)
+[2024-02-07T23:20:56.647+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-07T23:20:56.687+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,331 @@
+[2024-02-08T00:23:20.283+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T00:23:18.414123+00:00 [queued]>
+[2024-02-08T00:23:20.320+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T00:23:18.414123+00:00 [queued]>
+[2024-02-08T00:23:20.321+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-08T00:23:20.368+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): extracts.teste> on 2024-02-08 00:23:18.414123+00:00
+[2024-02-08T00:23:20.432+0000] {standard_task_runner.py:60} INFO - Started process 793 to run task
+[2024-02-08T00:23:20.441+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'lighthouse_challenge', 'extracts.teste', 'manual__2024-02-08T00:23:18.414123+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpblbd2u1x']
+[2024-02-08T00:23:20.466+0000] {standard_task_runner.py:88} INFO - Job 38: Subtask extracts.teste
+[2024-02-08T00:23:20.577+0000] {task_command.py:423} INFO - Running <TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-08T00:23:18.414123+00:00 [running]> on host 793d4bc8add3
+[2024-02-08T00:23:20.650+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='lighthouse_challenge' AIRFLOW_CTX_TASK_ID='extracts.teste' AIRFLOW_CTX_EXECUTION_DATE='2024-02-08T00:23:18.414123+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-08T00:23:18.414123+00:00'
+[2024-02-08T00:23:20.655+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-08T00:23:20.656+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/meltano && pip install meltano && meltano install extractors && meltano install loaders && meltano run extract-csv']
+[2024-02-08T00:23:20.665+0000] {subprocess.py:86} INFO - Output:
+[2024-02-08T00:23:20.958+0000] {subprocess.py:93} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2024-02-08T00:23:21.034+0000] {subprocess.py:93} INFO - Requirement already satisfied: meltano in /home/***/.local/lib/python3.8/site-packages (3.3.1)
+[2024-02-08T00:23:21.059+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiodocker<0.22.0,>=0.21.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.21.0)
+[2024-02-08T00:23:21.059+0000] {subprocess.py:93} INFO - Requirement already satisfied: alembic<2.0.0,>=1.13.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.13.1)
+[2024-02-08T00:23:21.060+0000] {subprocess.py:93} INFO - Requirement already satisfied: atomicwrites<2.0.0,>=1.2.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.4.1)
+[2024-02-08T00:23:21.061+0000] {subprocess.py:93} INFO - Requirement already satisfied: check-jsonschema<0.23.0,>=0.22.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.22.0)
+[2024-02-08T00:23:21.061+0000] {subprocess.py:93} INFO - Requirement already satisfied: click<9.0,>=8.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (8.1.7)
+[2024-02-08T00:23:21.062+0000] {subprocess.py:93} INFO - Requirement already satisfied: click-default-group<2.0.0,>=1.2.4 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.2.4)
+[2024-02-08T00:23:21.062+0000] {subprocess.py:93} INFO - Requirement already satisfied: click-didyoumean<0.4.0,>=0.3.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.3.0)
+[2024-02-08T00:23:21.063+0000] {subprocess.py:93} INFO - Requirement already satisfied: croniter<3.0.0,>=2.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.1)
+[2024-02-08T00:23:21.063+0000] {subprocess.py:93} INFO - Requirement already satisfied: fasteners<0.20,>=0.19 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.19)
+[2024-02-08T00:23:21.063+0000] {subprocess.py:93} INFO - Requirement already satisfied: flatten-dict<1,>=0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.4.2)
+[2024-02-08T00:23:21.064+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-resources<7.0.0,>=6.1.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.1.1)
+[2024-02-08T00:23:21.064+0000] {subprocess.py:93} INFO - Requirement already satisfied: jinja2<4.0.0,>=3.1.3 in /home/***/.local/lib/python3.8/site-packages (from meltano) (3.1.3)
+[2024-02-08T00:23:21.065+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema<5.0,>=4.20 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.20.0)
+[2024-02-08T00:23:21.065+0000] {subprocess.py:93} INFO - Requirement already satisfied: packaging<24.0,>=23.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (23.2)
+[2024-02-08T00:23:21.066+0000] {subprocess.py:93} INFO - Requirement already satisfied: platformdirs<5.0.0,>=4.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.2.0)
+[2024-02-08T00:23:21.066+0000] {subprocess.py:93} INFO - Requirement already satisfied: psutil<6.0.0,>=5.9.7 in /home/***/.local/lib/python3.8/site-packages (from meltano) (5.9.7)
+[2024-02-08T00:23:21.066+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyjwt<3.0.0,>=2.6.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.8.0)
+[2024-02-08T00:23:21.067+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil<3.0.0,>=2.8.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.8.2)
+[2024-02-08T00:23:21.067+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dotenv<2.0.0,>=1.0.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.0.0)
+[2024-02-08T00:23:21.067+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-slugify<9.0.0,>=8.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (8.0.1)
+[2024-02-08T00:23:21.068+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-ulid<2.0.0,>=1.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.1.0)
+[2024-02-08T00:23:21.068+0000] {subprocess.py:93} INFO - Requirement already satisfied: pyyaml<7.0.0,>=6.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.0.1)
+[2024-02-08T00:23:21.068+0000] {subprocess.py:93} INFO - Requirement already satisfied: questionary<3.0.0,>=2.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.1)
+[2024-02-08T00:23:21.069+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests<3.0.0,>=2.31.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.31.0)
+[2024-02-08T00:23:21.069+0000] {subprocess.py:93} INFO - Requirement already satisfied: rich<14.0.0,>=13.7.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (13.7.0)
+[2024-02-08T00:23:21.069+0000] {subprocess.py:93} INFO - Requirement already satisfied: ruamel.yaml<0.18.0,>=0.17.21 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.17.21)
+[2024-02-08T00:23:21.070+0000] {subprocess.py:93} INFO - Requirement already satisfied: smart-open<7.0.0,>=6.4.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (6.4.0)
+[2024-02-08T00:23:21.070+0000] {subprocess.py:93} INFO - Requirement already satisfied: snowplow-tracker<2.0.0,>=1.0.1 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.0.1)
+[2024-02-08T00:23:21.070+0000] {subprocess.py:93} INFO - Requirement already satisfied: sqlalchemy<3.0.0,>=2.0.25 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.0.25)
+[2024-02-08T00:23:21.071+0000] {subprocess.py:93} INFO - Requirement already satisfied: structlog<25.0.0,>=24.1.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (24.1.0)
+[2024-02-08T00:23:21.071+0000] {subprocess.py:93} INFO - Requirement already satisfied: tabulate<0.10.0,>=0.9.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (0.9.0)
+[2024-02-08T00:23:21.071+0000] {subprocess.py:93} INFO - Requirement already satisfied: typing-extensions<5.0.0,>=4.9.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (4.9.0)
+[2024-02-08T00:23:21.071+0000] {subprocess.py:93} INFO - Requirement already satisfied: tzlocal<6.0,>=5.2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (5.2)
+[2024-02-08T00:23:21.072+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3<2 in /home/***/.local/lib/python3.8/site-packages (from meltano) (1.26.18)
+[2024-02-08T00:23:21.072+0000] {subprocess.py:93} INFO - Requirement already satisfied: virtualenv<21.0.0,>=20.25.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (20.25.0)
+[2024-02-08T00:23:21.072+0000] {subprocess.py:93} INFO - Requirement already satisfied: yaspin<3.0.0,>=2.3.0 in /home/***/.local/lib/python3.8/site-packages (from meltano) (2.5.0)
+[2024-02-08T00:23:21.074+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiohttp>=3.6 in /home/***/.local/lib/python3.8/site-packages (from aiodocker<0.22.0,>=0.21.0->meltano) (3.9.1)
+[2024-02-08T00:23:21.079+0000] {subprocess.py:93} INFO - Requirement already satisfied: Mako in /home/***/.local/lib/python3.8/site-packages (from alembic<2.0.0,>=1.13.1->meltano) (1.3.0)
+[2024-02-08T00:23:21.079+0000] {subprocess.py:93} INFO - Requirement already satisfied: importlib-metadata in /home/***/.local/lib/python3.8/site-packages (from alembic<2.0.0,>=1.13.1->meltano) (6.11.0)
+[2024-02-08T00:23:21.090+0000] {subprocess.py:93} INFO - Requirement already satisfied: ruamel.yaml.clib>=0.2.6 in /home/***/.local/lib/python3.8/site-packages (from ruamel.yaml<0.18.0,>=0.17.21->meltano) (0.2.8)
+[2024-02-08T00:23:21.096+0000] {subprocess.py:93} INFO - Requirement already satisfied: pytz>2021.1 in /home/***/.local/lib/python3.8/site-packages (from croniter<3.0.0,>=2.0.1->meltano) (2023.3.post1)
+[2024-02-08T00:23:21.099+0000] {subprocess.py:93} INFO - Requirement already satisfied: six<2.0,>=1.12 in /home/***/.local/lib/python3.8/site-packages (from flatten-dict<1,>=0->meltano) (1.16.0)
+[2024-02-08T00:23:21.107+0000] {subprocess.py:93} INFO - Requirement already satisfied: zipp>=3.1.0 in /home/***/.local/lib/python3.8/site-packages (from importlib-resources<7.0.0,>=6.1.1->meltano) (3.17.0)
+[2024-02-08T00:23:21.109+0000] {subprocess.py:93} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /home/***/.local/lib/python3.8/site-packages (from jinja2<4.0.0,>=3.1.3->meltano) (2.1.3)
+[2024-02-08T00:23:21.119+0000] {subprocess.py:93} INFO - Requirement already satisfied: attrs>=22.2.0 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (23.2.0)
+[2024-02-08T00:23:21.120+0000] {subprocess.py:93} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (2023.12.1)
+[2024-02-08T00:23:21.121+0000] {subprocess.py:93} INFO - Requirement already satisfied: pkgutil-resolve-name>=1.3.10 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (1.3.10)
+[2024-02-08T00:23:21.121+0000] {subprocess.py:93} INFO - Requirement already satisfied: referencing>=0.28.4 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (0.32.1)
+[2024-02-08T00:23:21.122+0000] {subprocess.py:93} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from jsonschema<5.0,>=4.20->meltano) (0.17.1)
+[2024-02-08T00:23:21.147+0000] {subprocess.py:93} INFO - Requirement already satisfied: text-unidecode>=1.3 in /home/***/.local/lib/python3.8/site-packages (from python-slugify<9.0.0,>=8.0.1->meltano) (1.3)
+[2024-02-08T00:23:21.152+0000] {subprocess.py:93} INFO - Requirement already satisfied: prompt_toolkit<=3.0.36,>=2.0 in /home/***/.local/lib/python3.8/site-packages (from questionary<3.0.0,>=2.0.1->meltano) (3.0.36)
+[2024-02-08T00:23:21.156+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (3.3.2)
+[2024-02-08T00:23:21.157+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (3.6)
+[2024-02-08T00:23:21.157+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi>=2017.4.17 in /home/***/.local/lib/python3.8/site-packages (from requests<3.0.0,>=2.31.0->meltano) (2023.11.17)
+[2024-02-08T00:23:21.161+0000] {subprocess.py:93} INFO - Requirement already satisfied: markdown-it-py>=2.2.0 in /home/***/.local/lib/python3.8/site-packages (from rich<14.0.0,>=13.7.0->meltano) (3.0.0)
+[2024-02-08T00:23:21.162+0000] {subprocess.py:93} INFO - Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/***/.local/lib/python3.8/site-packages (from rich<14.0.0,>=13.7.0->meltano) (2.17.2)
+[2024-02-08T00:23:21.199+0000] {subprocess.py:93} INFO - Requirement already satisfied: greenlet!=0.4.17 in /home/***/.local/lib/python3.8/site-packages (from sqlalchemy<3.0.0,>=2.0.25->meltano) (3.0.3)
+[2024-02-08T00:23:21.224+0000] {subprocess.py:93} INFO - Requirement already satisfied: backports.zoneinfo in /home/***/.local/lib/python3.8/site-packages (from tzlocal<6.0,>=5.2->meltano) (0.2.1)
+[2024-02-08T00:23:21.243+0000] {subprocess.py:93} INFO - Requirement already satisfied: distlib<1,>=0.3.7 in /home/***/.local/lib/python3.8/site-packages (from virtualenv<21.0.0,>=20.25.0->meltano) (0.3.8)
+[2024-02-08T00:23:21.244+0000] {subprocess.py:93} INFO - Requirement already satisfied: filelock<4,>=3.12.2 in /home/***/.local/lib/python3.8/site-packages (from virtualenv<21.0.0,>=20.25.0->meltano) (3.13.1)
+[2024-02-08T00:23:21.246+0000] {subprocess.py:93} INFO - Requirement already satisfied: termcolor<3.0,>=2.3 in /home/***/.local/lib/python3.8/site-packages (from yaspin<3.0.0,>=2.3.0->meltano) (2.4.0)
+[2024-02-08T00:23:21.253+0000] {subprocess.py:93} INFO - Requirement already satisfied: multidict<7.0,>=4.5 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (6.0.4)
+[2024-02-08T00:23:21.253+0000] {subprocess.py:93} INFO - Requirement already satisfied: yarl<2.0,>=1.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.9.4)
+[2024-02-08T00:23:21.253+0000] {subprocess.py:93} INFO - Requirement already satisfied: frozenlist>=1.1.1 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.4.1)
+[2024-02-08T00:23:21.254+0000] {subprocess.py:93} INFO - Requirement already satisfied: aiosignal>=1.1.2 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (1.3.1)
+[2024-02-08T00:23:21.255+0000] {subprocess.py:93} INFO - Requirement already satisfied: async-timeout<5.0,>=4.0 in /home/***/.local/lib/python3.8/site-packages (from aiohttp>=3.6->aiodocker<0.22.0,>=0.21.0->meltano) (4.0.3)
+[2024-02-08T00:23:21.299+0000] {subprocess.py:93} INFO - Requirement already satisfied: mdurl~=0.1 in /home/***/.local/lib/python3.8/site-packages (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.7.0->meltano) (0.1.2)
+[2024-02-08T00:23:21.307+0000] {subprocess.py:93} INFO - Requirement already satisfied: wcwidth in /home/***/.local/lib/python3.8/site-packages (from prompt_toolkit<=3.0.36,>=2.0->questionary<3.0.0,>=2.0.1->meltano) (0.2.13)
+[2024-02-08T00:23:23.014+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:23.019+0000] {subprocess.py:93} INFO - [notice] A new release of pip is available: 23.3.2 -> 24.0
+[2024-02-08T00:23:23.020+0000] {subprocess.py:93} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-02-08T00:23:24.027+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.026949Z[0m [[32m[1mdebug    [0m] [1mmeltano 3.3.1, Linux          [0m
+[2024-02-08T00:23:24.029+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.029438Z[0m [[32m[1mdebug    [0m] [1m/etc/timezone found, contents:
+[2024-02-08T00:23:24.029+0000] {subprocess.py:93} INFO -  Etc/UTC
+[2024-02-08T00:23:24.030+0000] {subprocess.py:93} INFO - [0m
+[2024-02-08T00:23:24.030+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.029854Z[0m [[32m[1mdebug    [0m] [1m/etc/localtime found          [0m
+[2024-02-08T00:23:24.030+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.030610Z[0m [[32m[1mdebug    [0m] [1m2 found:
+[2024-02-08T00:23:24.030+0000] {subprocess.py:93} INFO -  {'/etc/timezone': 'Etc/UTC', '/etc/localtime is a symlink to': 'Etc/UTC'}[0m
+[2024-02-08T00:23:24.033+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.032994Z[0m [[32m[1mdebug    [0m] [1mCreating DB engine for project at '/opt/***/meltano' with DB URI 'sqlite://opt/***/meltano/.meltano/meltano.db'[0m
+[2024-02-08T00:23:24.058+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.058424Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-csv[0m [36mplugin[0m=[35mtap-csv[0m [36msource[0m=[35m<DefinitionSource.LOCKFILE: 4>[0m
+[2024-02-08T00:23:24.060+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060053Z[0m [[33m[1mwarning  [0m] [1m`kind: password` is deprecated for setting definitions in favour of `sensitive: true`, and is currently in use by the following settings of extractor 'tap-postgres': 'password', 'ssh_tunnel.private_key', 'ssh_tunnel.private_key_password', 'ssl_client_private_key'. Please open an issue or pull request to update the plugin definition on Meltano Hub at https://github.com/meltano/hub/blob/main/_data/meltano/extractors/tap-postgres/meltanolabs.yml.[0m
+[2024-02-08T00:23:24.060+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060246Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres[0m [36msource[0m=[35m<DefinitionSource.LOCKFILE: 4>[0m
+[2024-02-08T00:23:24.060+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060351Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-csv[0m [36mplugin[0m=[35mtap-csv--to-lighthouse[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.060+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060415Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-categories[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.060+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060470Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-customers[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060523Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-employee_territories[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060573Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-employees[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060621Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-orders[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060692Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-products[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060754Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-shippers[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060810Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-suppliers[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.061+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060857Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-postgres[0m [36mplugin[0m=[35mtap-postgres--northwind-public-us_states[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.060915Z[0m [[32m[1mdebug    [0m] [1mFound plugin parent           [0m [36mparent[0m=[35mtap-csv[0m [36mplugin[0m=[35mtap-csv--order_details[0m [36msource[0m=[35m<DefinitionSource.INHERITED: 8>[0m
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Installing 13 plugins...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-csv--to-lighthouse'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-categories'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-customers'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-employee_territories'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-employees'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-orders'...
+[2024-02-08T00:23:24.062+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-products'...
+[2024-02-08T00:23:24.063+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-shippers'...
+[2024-02-08T00:23:24.063+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-suppliers'...
+[2024-02-08T00:23:24.063+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-postgres--northwind-public-us_states'...
+[2024-02-08T00:23:24.063+0000] {subprocess.py:93} INFO - Skipped installing extractor 'tap-csv--order_details'...
+[2024-02-08T00:23:24.063+0000] {subprocess.py:93} INFO - Installing extractor 'tap-csv'...
+[2024-02-08T00:23:24.086+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.086858Z[0m [[32m[1mdebug    [0m] [1mPackages for 'extractors/tap-csv' have changed so performing a clean install.[0m
+[2024-02-08T00:23:24.719+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.718844Z[0m [[32m[1mdebug    [0m] [1mRemoved old virtual environment for 'extractors/tap-csv'[0m
+[2024-02-08T00:23:24.721+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.719053Z[0m [[32m[1mdebug    [0m] [1mCreating virtual environment for 'extractors/tap-csv'[0m
+[2024-02-08T00:23:24.725+0000] {subprocess.py:93} INFO - Installing extractor 'tap-postgres'...
+[2024-02-08T00:23:24.805+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:24.805027Z[0m [[32m[1mdebug    [0m] [1mPackages for 'extractors/tap-postgres' have changed so performing a clean install.[0m
+[2024-02-08T00:23:25.485+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:25.483274Z[0m [[32m[1mdebug    [0m] [1mRemoved old virtual environment for 'extractors/tap-postgres'[0m
+[2024-02-08T00:23:25.487+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:25.483944Z[0m [[32m[1mdebug    [0m] [1mCreating virtual environment for 'extractors/tap-postgres'[0m
+[2024-02-08T00:23:26.059+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:26.058501Z[0m [[32m[1mdebug    [0m] [1mUpgrading pip for 'extractors/tap-csv'[0m
+[2024-02-08T00:23:26.062+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:26.059244Z[0m [[32m[1mdebug    [0m] [1mUpgrading with args '--upgrade pip' in existing virtual environment for 'extractors/tap-csv'[0m
+[2024-02-08T00:23:26.573+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:26.572862Z[0m [[32m[1mdebug    [0m] [1mUpgrading pip for 'extractors/tap-postgres'[0m
+[2024-02-08T00:23:26.574+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:26.573162Z[0m [[32m[1mdebug    [0m] [1mUpgrading with args '--upgrade pip' in existing virtual environment for 'extractors/tap-postgres'[0m
+[2024-02-08T00:23:30.534+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:30.532949Z[0m [[32m[1mdebug    [0m] [1mInstalling with args 'git+https://github.com/MeltanoLabs/tap-csv.git' into virtual environment for 'extractors/tap-csv'[0m
+[2024-02-08T00:23:31.176+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:31.176132Z[0m [[32m[1minfo     [0m] [1mLogged pip install output to /opt/***/meltano/.meltano/logs/pip/extractors/tap-csv/pip.log[0m
+[2024-02-08T00:23:31.177+0000] {subprocess.py:93} INFO - Extractor 'tap-csv' could not be installed: Failed to install plugin 'tap-csv'.
+[2024-02-08T00:23:31.178+0000] {subprocess.py:93} INFO - Collecting git+https://github.com/MeltanoLabs/tap-csv.git
+[2024-02-08T00:23:31.178+0000] {subprocess.py:93} INFO -   Cloning https://github.com/MeltanoLabs/tap-csv.git to /tmp/pip-req-build-wdtxxn7v
+[2024-02-08T00:23:31.179+0000] {subprocess.py:93} INFO -   ERROR: Error [Errno 13] Permission denied: 'git' while executing command git version
+[2024-02-08T00:23:31.179+0000] {subprocess.py:93} INFO - ERROR: No permission to execute 'git' - install it locally, globally (ask admin), or check your PATH. See possible solutions at https://pip.pypa.io/en/latest/reference/pip_freeze/#fixing-permission-denied.
+[2024-02-08T00:23:31.179+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:31.263+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:31.263347Z[0m [[32m[1mdebug    [0m] [1mInstalling with args 'git+https://github.com/MeltanoLabs/tap-postgres.git' into virtual environment for 'extractors/tap-postgres'[0m
+[2024-02-08T00:23:31.734+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:31.733177Z[0m [[32m[1minfo     [0m] [1mLogged pip install output to /opt/***/meltano/.meltano/logs/pip/extractors/tap-postgres/pip.log[0m
+[2024-02-08T00:23:31.737+0000] {subprocess.py:93} INFO - Extractor 'tap-postgres' could not be installed: Failed to install plugin 'tap-postgres'.
+[2024-02-08T00:23:31.738+0000] {subprocess.py:93} INFO - Collecting git+https://github.com/MeltanoLabs/tap-postgres.git
+[2024-02-08T00:23:31.738+0000] {subprocess.py:93} INFO -   Cloning https://github.com/MeltanoLabs/tap-postgres.git to /tmp/pip-req-build-0yn5jngz
+[2024-02-08T00:23:31.738+0000] {subprocess.py:93} INFO -   ERROR: Error [Errno 13] Permission denied: 'git' while executing command git version
+[2024-02-08T00:23:31.738+0000] {subprocess.py:93} INFO - ERROR: No permission to execute 'git' - install it locally, globally (ask admin), or check your PATH. See possible solutions at https://pip.pypa.io/en/latest/reference/pip_freeze/#fixing-permission-denied.
+[2024-02-08T00:23:31.738+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:31.739+0000] {subprocess.py:93} INFO - Installed 0/13 plugins
+[2024-02-08T00:23:31.739+0000] {subprocess.py:93} INFO - Skipped installing 11/13 plugins
+[2024-02-08T00:23:32.051+0000] {subprocess.py:93} INFO - [2m2024-02-08T00:23:31.739095Z[0m [[32m[1mdebug    [0m] [1mNeed help fixing this problem? Visit http://melta.no/ for troubleshooting steps, or to
+[2024-02-08T00:23:32.052+0000] {subprocess.py:93} INFO - join our friendly Slack community.
+[2024-02-08T00:23:32.052+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.052+0000] {subprocess.py:93} INFO - Failed to install plugin(s)[0m
+[2024-02-08T00:23:32.053+0000] {subprocess.py:93} INFO - [31m╭─[0m[31m────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────[0m[31m─╮[0m
+[2024-02-08T00:23:32.053+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33m__init__.py[0m:[94m102[0m [31m│[0m
+[2024-02-08T00:23:32.054+0000] {subprocess.py:93} INFO - [31m│[0m in [92m_run_cli[0m                                                                  [31m│[0m
+[2024-02-08T00:23:32.054+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.054+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 99 [0m[2;33m│   [0m[33m"""[0m                                                                [31m│[0m
+[2024-02-08T00:23:32.054+0000] {subprocess.py:93} INFO - [31m│[0m   [2m100 [0m[2m│   [0m[94mtry[0m:                                                               [31m│[0m
+[2024-02-08T00:23:32.055+0000] {subprocess.py:93} INFO - [31m│[0m   [2m101 [0m[2m│   │   [0m[94mtry[0m:  [2m# noqa: WPS225, WPS505[0m                                   [31m│[0m
+[2024-02-08T00:23:32.055+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m102 [2m│   │   │   [0mcli(obj={[33m"[0m[33mproject[0m[33m"[0m: [94mNone[0m})                                 [31m│[0m
+[2024-02-08T00:23:32.055+0000] {subprocess.py:93} INFO - [31m│[0m   [2m103 [0m[2m│   │   [0m[94mexcept[0m ProjectReadonly [94mas[0m err:                                 [31m│[0m
+[2024-02-08T00:23:32.056+0000] {subprocess.py:93} INFO - [31m│[0m   [2m104 [0m[2m│   │   │   [0m[94mraise[0m CliError(                                            [31m│[0m
+[2024-02-08T00:23:32.056+0000] {subprocess.py:93} INFO - [31m│[0m   [2m105 [0m[2m│   │   │   │   [0m[33mf[0m[33m"[0m[33mThe requested action could not be completed: [0m[33m{[0merr[33m}[0m[33m"[0m, [31m│[0m
+[2024-02-08T00:23:32.056+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.056+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mcore.py[0m:[94m1157[0m in       [31m│[0m
+[2024-02-08T00:23:32.057+0000] {subprocess.py:93} INFO - [31m│[0m [92m__call__[0m                                                                     [31m│[0m
+[2024-02-08T00:23:32.057+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.057+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1154 [0m[2m│   [0m                                                                  [31m│[0m
+[2024-02-08T00:23:32.057+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1155 [0m[2m│   [0m[94mdef[0m [92m__call__[0m([96mself[0m, *args: t.Any, **kwargs: t.Any) -> t.Any:       [31m│[0m
+[2024-02-08T00:23:32.057+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1156 [0m[2;90m│   │   [0m[33m"""Alias for :meth:`main`."""[0m                                 [31m│[0m
+[2024-02-08T00:23:32.058+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m1157 [2m│   │   [0m[94mreturn[0m [96mself[0m.main(*args, **kwargs)                             [31m│[0m
+[2024-02-08T00:23:32.058+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1158 [0m                                                                      [31m│[0m
+[2024-02-08T00:23:32.058+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1159 [0m                                                                      [31m│[0m
+[2024-02-08T00:23:32.058+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1160 [0m[94mclass[0m [4;92mCommand[0m(BaseCommand):                                           [31m│[0m
+[2024-02-08T00:23:32.058+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.059+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33mcli.py[0m:[94m46[0m in    [31m│[0m
+[2024-02-08T00:23:32.059+0000] {subprocess.py:93} INFO - [31m│[0m [92mmain[0m                                                                         [31m│[0m
+[2024-02-08T00:23:32.060+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.061+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 43 [0m[2;33m│   │   │   [0m[33margs: Positional arguments for the Click group.[0m            [31m│[0m
+[2024-02-08T00:23:32.061+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 44 [0m[2;33m│   │   │   [0m[33mkwargs: Keyword arguments for the Click group.[0m             [31m│[0m
+[2024-02-08T00:23:32.061+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 45 [0m[2;33m│   │   [0m[33m"""[0m                                                            [31m│[0m
+[2024-02-08T00:23:32.062+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m 46 [2m│   │   [0m[94mreturn[0m [96msuper[0m().main(*args, windows_expand_args=[94mFalse[0m, **kwargs [31m│[0m
+[2024-02-08T00:23:32.063+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 47 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.063+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 48 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.063+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 49 [0m[1;95m@click[0m.group(                                                          [31m│[0m
+[2024-02-08T00:23:32.064+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.064+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mcore.py[0m:[94m1078[0m in [92mmain[0m  [31m│[0m
+[2024-02-08T00:23:32.064+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.065+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1075 [0m[2m│   │   [0m[94mtry[0m:                                                          [31m│[0m
+[2024-02-08T00:23:32.065+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1076 [0m[2m│   │   │   [0m[94mtry[0m:                                                      [31m│[0m
+[2024-02-08T00:23:32.065+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1077 [0m[2m│   │   │   │   [0m[94mwith[0m [96mself[0m.make_context(prog_name, args, **extra) [94mas[0m c [31m│[0m
+[2024-02-08T00:23:32.065+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m1078 [2m│   │   │   │   │   [0mrv = [96mself[0m.invoke(ctx)                             [31m│[0m
+[2024-02-08T00:23:32.065+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1079 [0m[2m│   │   │   │   │   [0m[94mif[0m [95mnot[0m standalone_mode:                           [31m│[0m
+[2024-02-08T00:23:32.066+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1080 [0m[2m│   │   │   │   │   │   [0m[94mreturn[0m rv                                     [31m│[0m
+[2024-02-08T00:23:32.066+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1081 [0m[2m│   │   │   │   │   [0m[2m# it's not safe to `ctx.exit(rv)` here![0m           [31m│[0m
+[2024-02-08T00:23:32.066+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.066+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33mutils.py[0m:[94m641[0m in [31m│[0m
+[2024-02-08T00:23:32.067+0000] {subprocess.py:93} INFO - [31m│[0m [92minvoke[0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.068+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.068+0000] {subprocess.py:93} INFO - [31m│[0m   [2m638 [0m[2m│   │   [0menact_environment_behavior([96mself[0m.environment_behavior, ctx)     [31m│[0m
+[2024-02-08T00:23:32.069+0000] {subprocess.py:93} INFO - [31m│[0m   [2m639 [0m[2m│   │   [0m[94mif[0m ctx.obj.get([33m"[0m[33mtracker[0m[33m"[0m):                                     [31m│[0m
+[2024-02-08T00:23:32.069+0000] {subprocess.py:93} INFO - [31m│[0m   [2m640 [0m[2m│   │   │   [0mctx.obj[[33m"[0m[33mtracker[0m[33m"[0m].add_contexts(CliContext.from_click_cont [31m│[0m
+[2024-02-08T00:23:32.069+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m641 [2m│   │   [0m[96msuper[0m().invoke(ctx)                                            [31m│[0m
+[2024-02-08T00:23:32.069+0000] {subprocess.py:93} INFO - [31m│[0m   [2m642 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.070+0000] {subprocess.py:93} INFO - [31m│[0m   [2m643 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.070+0000] {subprocess.py:93} INFO - [31m│[0m   [2m644 [0m[94mclass[0m [4;92mInstrumentedDefaultGroup[0m(InstrumentedGroupMixin, DefaultGroup, D [31m│[0m
+[2024-02-08T00:23:32.070+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.070+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mcore.py[0m:[94m1688[0m in       [31m│[0m
+[2024-02-08T00:23:32.070+0000] {subprocess.py:93} INFO - [31m│[0m [92minvoke[0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1685 [0m[2m│   │   │   │   [0m[96msuper[0m().invoke(ctx)                                   [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1686 [0m[2m│   │   │   │   [0msub_ctx = cmd.make_context(cmd_name, args, parent=ctx [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1687 [0m[2m│   │   │   │   [0m[94mwith[0m sub_ctx:                                         [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m1688 [2m│   │   │   │   │   [0m[94mreturn[0m _process_result(sub_ctx.command.invoke(sub [31m│[0m
+[2024-02-08T00:23:32.071+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1689 [0m[2m│   │   [0m                                                              [31m│[0m
+[2024-02-08T00:23:32.072+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1690 [0m[2m│   │   [0m[2m# In chain mode we create the contexts step by step, but afte[0m [31m│[0m
+[2024-02-08T00:23:32.072+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1691 [0m[2m│   │   [0m[2m# base command has been invoked.  Because at that point we do[0m [31m│[0m
+[2024-02-08T00:23:32.072+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.072+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33mutils.py[0m:[94m690[0m in [31m│[0m
+[2024-02-08T00:23:32.073+0000] {subprocess.py:93} INFO - [31m│[0m [92minvoke[0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.073+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.073+0000] {subprocess.py:93} INFO - [31m│[0m   [2m687 [0m[2m│   │   [0m[94mif[0m ctx.obj.get([33m"[0m[33mtracker[0m[33m"[0m):                                     [31m│[0m
+[2024-02-08T00:23:32.073+0000] {subprocess.py:93} INFO - [31m│[0m   [2m688 [0m[2m│   │   │   [0mctx.obj[[33m"[0m[33mtracker[0m[33m"[0m].add_contexts(CliContext.from_click_cont [31m│[0m
+[2024-02-08T00:23:32.077+0000] {subprocess.py:93} INFO - [31m│[0m   [2m689 [0m[2m│   │   │   [0mctx.obj[[33m"[0m[33mtracker[0m[33m"[0m].track_command_event(CliEvent.started)   [31m│[0m
+[2024-02-08T00:23:32.078+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m690 [2m│   │   [0m[96msuper[0m().invoke(ctx)                                            [31m│[0m
+[2024-02-08T00:23:32.078+0000] {subprocess.py:93} INFO - [31m│[0m   [2m691 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.079+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.080+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mcore.py[0m:[94m1434[0m in       [31m│[0m
+[2024-02-08T00:23:32.080+0000] {subprocess.py:93} INFO - [31m│[0m [92minvoke[0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.081+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.081+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1431 [0m[2m│   │   │   [0mecho(style(message, fg=[33m"[0m[33mred[0m[33m"[0m), err=[94mTrue[0m)                  [31m│[0m
+[2024-02-08T00:23:32.083+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1432 [0m[2m│   │   [0m                                                              [31m│[0m
+[2024-02-08T00:23:32.085+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1433 [0m[2m│   │   [0m[94mif[0m [96mself[0m.callback [95mis[0m [95mnot[0m [94mNone[0m:                                 [31m│[0m
+[2024-02-08T00:23:32.089+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m1434 [2m│   │   │   [0m[94mreturn[0m ctx.invoke([96mself[0m.callback, **ctx.params)            [31m│[0m
+[2024-02-08T00:23:32.092+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1435 [0m[2m│   [0m                                                                  [31m│[0m
+[2024-02-08T00:23:32.094+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1436 [0m[2m│   [0m[94mdef[0m [92mshell_complete[0m([96mself[0m, ctx: Context, incomplete: [96mstr[0m) -> t.List [31m│[0m
+[2024-02-08T00:23:32.097+0000] {subprocess.py:93} INFO - [31m│[0m   [2m1437 [0m[2;90m│   │   [0m[33m"""Return a list of completions for the incomplete value. Loo[0m [31m│[0m
+[2024-02-08T00:23:32.099+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.099+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mcore.py[0m:[94m783[0m in [92minvoke[0m [31m│[0m
+[2024-02-08T00:23:32.100+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.100+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 780 [0m[2m│   │   [0m                                                              [31m│[0m
+[2024-02-08T00:23:32.101+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 781 [0m[2m│   │   [0m[94mwith[0m augment_usage_errors(__self):                            [31m│[0m
+[2024-02-08T00:23:32.102+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 782 [0m[2m│   │   │   [0m[94mwith[0m ctx:                                                 [31m│[0m
+[2024-02-08T00:23:32.102+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m 783 [2m│   │   │   │   [0m[94mreturn[0m __callback(*args, **kwargs)                    [31m│[0m
+[2024-02-08T00:23:32.103+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 784 [0m[2m│   [0m                                                                  [31m│[0m
+[2024-02-08T00:23:32.103+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 785 [0m[2m│   [0m[94mdef[0m [92mforward[0m(                                                      [31m│[0m
+[2024-02-08T00:23:32.104+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 786 [0m[2m│   │   [0m__self, __cmd: [33m"[0m[33mCommand[0m[33m"[0m, *args: t.Any, **kwargs: t.Any  [2m# no[0m [31m│[0m
+[2024-02-08T00:23:32.104+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.105+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/click/[0m[1;33mdecorators.py[0m:[94m33[0m in   [31m│[0m
+[2024-02-08T00:23:32.105+0000] {subprocess.py:93} INFO - [31m│[0m [92mnew_func[0m                                                                     [31m│[0m
+[2024-02-08T00:23:32.106+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.106+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 30 [0m[2;33m│   [0m[33m"""[0m                                                                [31m│[0m
+[2024-02-08T00:23:32.106+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 31 [0m[2m│   [0m                                                                   [31m│[0m
+[2024-02-08T00:23:32.107+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 32 [0m[2m│   [0m[94mdef[0m [92mnew_func[0m(*args: [33m"[0m[33mP.args[0m[33m"[0m, **kwargs: [33m"[0m[33mP.kwargs[0m[33m"[0m) -> [33m"[0m[33mR[0m[33m"[0m:        [31m│[0m
+[2024-02-08T00:23:32.107+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m 33 [2m│   │   [0m[94mreturn[0m f(get_current_context(), *args, **kwargs)               [31m│[0m
+[2024-02-08T00:23:32.107+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 34 [0m[2m│   [0m                                                                   [31m│[0m
+[2024-02-08T00:23:32.108+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 35 [0m[2m│   [0m[94mreturn[0m update_wrapper(new_func, f)                                 [31m│[0m
+[2024-02-08T00:23:32.108+0000] {subprocess.py:93} INFO - [31m│[0m   [2m 36 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.108+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.108+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33mparams.py[0m:[94m27[0m in [31m│[0m
+[2024-02-08T00:23:32.109+0000] {subprocess.py:93} INFO - [31m│[0m [92mdecorate[0m                                                                     [31m│[0m
+[2024-02-08T00:23:32.109+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.109+0000] {subprocess.py:93} INFO - [31m│[0m   [2m24 [0m[2m│   │   [0m[94mif[0m database_uri:                                                [31m│[0m
+[2024-02-08T00:23:32.109+0000] {subprocess.py:93} INFO - [31m│[0m   [2m25 [0m[2m│   │   │   [0mProjectSettingsService.config_override[[33m"[0m[33mdatabase_uri[0m[33m"[0m] = da [31m│[0m
+[2024-02-08T00:23:32.110+0000] {subprocess.py:93} INFO - [31m│[0m   [2m26 [0m[2m│   │   [0m                                                                [31m│[0m
+[2024-02-08T00:23:32.110+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m27 [2m│   │   [0m[94mreturn[0m func(*args, **kwargs)                                    [31m│[0m
+[2024-02-08T00:23:32.110+0000] {subprocess.py:93} INFO - [31m│[0m   [2m28 [0m[2m│   [0m                                                                    [31m│[0m
+[2024-02-08T00:23:32.110+0000] {subprocess.py:93} INFO - [31m│[0m   [2m29 [0m[2m│   [0m[94mreturn[0m functools.update_wrapper(decorate, func)                     [31m│[0m
+[2024-02-08T00:23:32.111+0000] {subprocess.py:93} INFO - [31m│[0m   [2m30 [0m                                                                        [31m│[0m
+[2024-02-08T00:23:32.111+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.111+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33mparams.py[0m:[94m75[0m in [31m│[0m
+[2024-02-08T00:23:32.112+0000] {subprocess.py:93} INFO - [31m│[0m [92mdecorate[0m                                                                     [31m│[0m
+[2024-02-08T00:23:32.112+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.112+0000] {subprocess.py:93} INFO - [31m│[0m   [2m72 [0m[2m│   │   │   │   [0m[94mexcept[0m MigrationError [94mas[0m err:                           [31m│[0m
+[2024-02-08T00:23:32.113+0000] {subprocess.py:93} INFO - [31m│[0m   [2m73 [0m[2m│   │   │   │   │   [0m[94mraise[0m CliError([96mstr[0m(err)) [94mfrom[0m [4;96merr[0m                   [31m│[0m
+[2024-02-08T00:23:32.113+0000] {subprocess.py:93} INFO - [31m│[0m   [2m74 [0m[2m│   │   │   [0m                                                            [31m│[0m
+[2024-02-08T00:23:32.114+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m75 [2m│   │   │   [0mfunc(project, *args, **kwargs)                              [31m│[0m
+[2024-02-08T00:23:32.118+0000] {subprocess.py:93} INFO - [31m│[0m   [2m76 [0m[2m│   │   [0m                                                                [31m│[0m
+[2024-02-08T00:23:32.119+0000] {subprocess.py:93} INFO - [31m│[0m   [2m77 [0m[2m│   │   [0m[94mreturn[0m functools.update_wrapper(decorate, func)                 [31m│[0m
+[2024-02-08T00:23:32.119+0000] {subprocess.py:93} INFO - [31m│[0m   [2m78 [0m                                                                        [31m│[0m
+[2024-02-08T00:23:32.119+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.120+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33minstall.py[0m:[94m110[0m  [31m│[0m
+[2024-02-08T00:23:32.120+0000] {subprocess.py:93} INFO - [31m│[0m in [92minstall[0m                                                                   [31m│[0m
+[2024-02-08T00:23:32.120+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.120+0000] {subprocess.py:93} INFO - [31m│[0m   [2m107 [0m[2m│   [0m)                                                                  [31m│[0m
+[2024-02-08T00:23:32.121+0000] {subprocess.py:93} INFO - [31m│[0m   [2m108 [0m[2m│   [0m[94mif[0m [95mnot[0m success:                                                    [31m│[0m
+[2024-02-08T00:23:32.121+0000] {subprocess.py:93} INFO - [31m│[0m   [2m109 [0m[2m│   │   [0mtracker.track_command_event(CliEvent.failed)                   [31m│[0m
+[2024-02-08T00:23:32.121+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m110 [2m│   │   [0m[94mraise[0m CliError([33m"[0m[33mFailed to install plugin(s)[0m[33m"[0m)                  [31m│[0m
+[2024-02-08T00:23:32.121+0000] {subprocess.py:93} INFO - [31m│[0m   [2m111 [0m[2m│   [0mtracker.track_command_event(CliEvent.completed)                    [31m│[0m
+[2024-02-08T00:23:32.122+0000] {subprocess.py:93} INFO - [31m│[0m   [2m112 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.122+0000] {subprocess.py:93} INFO - [31m│[0m   [2m113 [0m                                                                       [31m│[0m
+[2024-02-08T00:23:32.122+0000] {subprocess.py:93} INFO - [31m╰──────────────────────────────────────────────────────────────────────────────╯[0m
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - [1;91mCliError: [0mFailed to install [1;35mplugin[0m[1m([0ms[1m)[0m
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - [3mThe above exception was the direct cause of the following exception:[0m
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - [31m╭─[0m[31m────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────[0m[31m─╮[0m
+[2024-02-08T00:23:32.123+0000] {subprocess.py:93} INFO - [31m│[0m [2;33m/home/***/.local/lib/python3.8/site-packages/meltano/cli/[0m[1;33m__init__.py[0m:[94m112[0m [31m│[0m
+[2024-02-08T00:23:32.124+0000] {subprocess.py:93} INFO - [31m│[0m in [92m_run_cli[0m                                                                  [31m│[0m
+[2024-02-08T00:23:32.124+0000] {subprocess.py:93} INFO - [31m│[0m                                                                              [31m│[0m
+[2024-02-08T00:23:32.124+0000] {subprocess.py:93} INFO - [31m│[0m   [2m109 [0m[2m│   │   [0m[94mexcept[0m MeltanoError [94mas[0m err:                                    [31m│[0m
+[2024-02-08T00:23:32.124+0000] {subprocess.py:93} INFO - [31m│[0m   [2m110 [0m[2m│   │   │   [0mhandle_meltano_error(err)                                  [31m│[0m
+[2024-02-08T00:23:32.125+0000] {subprocess.py:93} INFO - [31m│[0m   [2m111 [0m[2m│   │   [0m[94mexcept[0m [96mException[0m [94mas[0m err:                                       [31m│[0m
+[2024-02-08T00:23:32.125+0000] {subprocess.py:93} INFO - [31m│[0m [31m❱ [0m112 [2m│   │   │   [0m[94mraise[0m CliError([33mf[0m[33m"[0m[33m{[0mtroubleshooting_message[33m}[0m[33m\n[0m[33m{[0merr[33m}[0m[33m"[0m) [94mfrom[0m [4;96me[0m [31m│[0m
+[2024-02-08T00:23:32.125+0000] {subprocess.py:93} INFO - [31m│[0m   [2m113 [0m[2m│   [0m[94mexcept[0m CliError [94mas[0m cli_error:                                      [31m│[0m
+[2024-02-08T00:23:32.125+0000] {subprocess.py:93} INFO - [31m│[0m   [2m114 [0m[2m│   │   [0mcli_error.print()                                              [31m│[0m
+[2024-02-08T00:23:32.126+0000] {subprocess.py:93} INFO - [31m│[0m   [2m115 [0m[2m│   │   [0msys.exit([94m1[0m)                                                    [31m│[0m
+[2024-02-08T00:23:32.126+0000] {subprocess.py:93} INFO - [31m╰──────────────────────────────────────────────────────────────────────────────╯[0m
+[2024-02-08T00:23:32.126+0000] {subprocess.py:93} INFO - [1;91mCliError: [0mNeed help fixing this problem? Visit [4;94mhttp://melta.no/[0m for
+[2024-02-08T00:23:32.126+0000] {subprocess.py:93} INFO - troubleshooting steps, or to
+[2024-02-08T00:23:32.126+0000] {subprocess.py:93} INFO - join our friendly Slack community.
+[2024-02-08T00:23:32.127+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.127+0000] {subprocess.py:93} INFO - Failed to install [1;35mplugin[0m[1m([0ms[1m)[0m
+[2024-02-08T00:23:32.127+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.127+0000] {subprocess.py:93} INFO - Need help fixing this problem? Visit http://melta.no/ for troubleshooting steps, or to
+[2024-02-08T00:23:32.127+0000] {subprocess.py:93} INFO - join our friendly Slack community.
+[2024-02-08T00:23:32.128+0000] {subprocess.py:93} INFO - 
+[2024-02-08T00:23:32.129+0000] {subprocess.py:93} INFO - Failed to install plugin(s)
+[2024-02-08T00:23:33.757+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-08T00:23:33.785+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-08T00:23:33.788+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=lighthouse_challenge, task_id=extracts.teste, execution_date=20240208T002318, start_date=20240208T002320, end_date=20240208T002333
+[2024-02-08T00:23:33.804+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 38 for task extracts.teste (Bash command failed. The command returned a non-zero exit code 1.; 793)
+[2024-02-08T00:23:33.841+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-08T00:23:33.864+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

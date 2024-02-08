@@ -1,0 +1,17 @@
+[2024-02-07T21:49:15.295+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T21:49:14.081636+00:00 [queued]>
+[2024-02-07T21:49:15.299+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T21:49:14.081636+00:00 [queued]>
+[2024-02-07T21:49:15.299+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-07T21:49:15.305+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): extracts.teste> on 2024-02-07 21:49:14.081636+00:00
+[2024-02-07T21:49:15.310+0000] {standard_task_runner.py:60} INFO - Started process 682 to run task
+[2024-02-07T21:49:15.312+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'lighthouse_challenge', 'extracts.teste', 'manual__2024-02-07T21:49:14.081636+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpfkkbubr4']
+[2024-02-07T21:49:15.315+0000] {standard_task_runner.py:88} INFO - Job 21: Subtask extracts.teste
+[2024-02-07T21:49:15.342+0000] {task_command.py:423} INFO - Running <TaskInstance: lighthouse_challenge.extracts.teste manual__2024-02-07T21:49:14.081636+00:00 [running]> on host 98e8e7f947a8
+[2024-02-07T21:49:15.389+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='lighthouse_challenge' AIRFLOW_CTX_TASK_ID='extracts.teste' AIRFLOW_CTX_EXECUTION_DATE='2024-02-07T21:49:14.081636+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-07T21:49:14.081636+00:00'
+[2024-02-07T21:49:15.391+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-02-07T21:49:15.391+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo 2']
+[2024-02-07T21:49:15.399+0000] {subprocess.py:86} INFO - Output:
+[2024-02-07T21:49:15.404+0000] {subprocess.py:93} INFO - 2
+[2024-02-07T21:49:15.404+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-07T21:49:15.420+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=lighthouse_challenge, task_id=extracts.teste, execution_date=20240207T214914, start_date=20240207T214915, end_date=20240207T214915
+[2024-02-07T21:49:15.452+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-07T21:49:15.462+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
